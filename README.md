@@ -22,7 +22,7 @@
 4. ⬜ Begin Python project learning
 
 ## 📅 Timeline
-- $(date +%Y-%m-%d): Portfolio created
+- 2025/12/15: Portfolio created
 
 ---
 *Code • Learn • Grow • Repeat*
