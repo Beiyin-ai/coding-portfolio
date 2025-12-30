@@ -1,16 +1,66 @@
-# Certificates
+# Certificates & Awards 證書與認證
 
-This directory contains certificates-related content.
+## 📜 語言能力證書
 
-## Status
-🟡 Planning phase
+### 🇪🇸 西班牙文 DELE B1
+- **發證機構：** Instituto Cervantes（塞萬提斯學院）
+- **級別：** B1（中級）
+- **取得日期：** 2019年1月14日
+- **能力描述：** 能夠處理日常生活和工作中的基本溝通情境
 
-## Purpose
-- **learning/**: Study notes and coding exercises
-- **projects/**: Complete software projects
-- **algorithms/**: Coding challenge solutions
-- **certificates/**: Certifications and awards
-- **resources/**: Useful learning materials
+### 🇬🇧 TOEIC 多益
+- **分數：** 795 分（藍色證書，785-900分）
+- **能力描述：** 能夠有效參與國際商務環境中的英語溝通
 
-## Next Steps
-Start adding your content here!
+### ✈️ 進階航空英語
+- **課程完成：** 文藻外語大學專業課程
+- **能力描述：** 航空領域專業英語溝通能力
+
+## 🛠️ 專業技術證書
+
+### 📦 國貿業務丙級技術士
+- **發證機構：** 勞動部勞動力發展署
+- **證書編號：** 丙級技術士
+- **取得日期：** 2020年4月7日（109/04/07）
+- **能力描述：** 國際貿易實務、單據製作、貿易法規等專業知識
+
+### 🐍 ITS Python 專業認證（準備中）
+- **發證機構：** ITS（資訊專業人員鑑定）
+- **考試日期：** 2025年1月8日
+- **準備狀態：** ⏳ 積極準備中
+- **相關學習：** 已完成 8 題 LeetCode Python 解法，建立完整學習系統
+
+### 💻 數位乙級檢定（計劃中）
+- **考試日期：** 2025年3月（預計）
+- **準備狀態：** 📅 規劃中
+- **考試內容：** 數位內容設計、多媒體應用、資訊科技整合
+
+## 🎯 證書取得策略
+
+### 已建立系統化學習方法：
+1. **實作優先** - 透過 LeetCode 練習 Python 實作能力
+2. **完整記錄** - 所有學習歷程皆有程式碼、測試、文檔
+3. **持續更新** - GitHub 定期上傳新進度
+
+### 2025年證書目標：
+- ✅ **1月：** ITS Python 專業認證
+- 📅 **3月：** 數位乙級檢定
+- 🎯 **年度：** 多益提升至 850+ 分（金色證書）
+
+## 📊 學習歷程整合
+
+本倉庫已建立完整的技術學習系統：
+- **[algorithms/](../algorithms/)** - 8題 LeetCode 解法，展示 Python 演算法能力
+- **[learning/](../learning/)** - Kotlin 語言學習，展示多語言學習能力
+- **certificates/** - 證書紀錄，展示語言與專業認證
+
+## 📝 證書補充說明
+
+**教育背景：**
+- 文藻外語大學專科部，英文與西班牙文雙主修（2020年畢業）
+- 學業排名：第7名
+
+**領導與活動經驗**（詳細內容請參閱其他專區）：
+- 英文系學生會會長、籃球社副社長
+- 泰國學生論壇講者、全國學生社團評選優等獎
+- 這些經驗培養了組織、溝通、跨文化協作能力
