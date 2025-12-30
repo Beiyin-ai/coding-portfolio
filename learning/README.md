@@ -1,16 +1,32 @@
-# Learning
+# Learning 學習專區
 
-This directory contains learning-related content.
+本目錄專門存放程式語言學習筆記、練習範例和技術學習紀錄。
 
-## Status
-🟡 Planning phase
+## 📊 目前狀態
+✅ **Active** - 持續更新中
 
-## Purpose
-- **learning/**: Study notes and coding exercises
-- **projects/**: Complete software projects
-- **algorithms/**: Coding challenge solutions
-- **certificates/**: Certifications and awards
-- **resources/**: Useful learning materials
+## 📚 專區內容
+### Kotlin 學習
+- [密封類別範例](kotlin/sealed-classes/) - 訂單狀態管理實作
+  - 學習重點：Sealed Class、狀態模式、when 表達式
 
-## Next Steps
-Start adding your content here!
+### 未來計劃
+1. **Python AI 學習** - 泰山職訓課程筆記整理
+2. **演算法筆記** - LeetCode 解法學習心得
+3. **跨平台開發** - APP 開發學習紀錄
+
+## 🏫 與泰山職訓課程連結
+目前正在參與「AI人工智慧與跨平台APP開發應用實務」課程，
+相關學習筆記將逐步整理至本專區。
+
+## 🔗 相關專區
+- **[algorithms/](../algorithms/)** - LeetCode 演算法實作練習
+- **[certificates/](../certificates/)** - 專業認證與證書紀錄
+- **[根目錄 README](../README.md)** - 完整作品集介紹
+
+## 📝 更新紀錄
+- **2024-12-30**: 新增 Kotlin 密封類別學習範例
+- **2024-12-29**: 學習專區結構建立
+
+---
+*專注學習，持續成長*
