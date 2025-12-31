@@ -14,17 +14,18 @@
 |---|-------|------------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [solution.py](leetcode/easy/0001-two-sum/solution.py) | [筆記](leetcode/easy/0001-two-sum/README.md) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [solution.py](leetcode/easy/0009-palindrome-number/solution.py) | [筆記](leetcode/easy/0009-palindrome-number/README.md) |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [solution.py](leetcode/easy/0020-valid-parentheses/solution.py) | [筆記](leetcode/easy/0020-valid-parentheses/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
+| 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | Easy | [solution.py](leetcode/easy/0412-fizz-buzz/solution.py) | [筆記](leetcode/easy/0412-fizz-buzz/README.md) |
 | 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | [solution.py](leetcode/easy/1480-running-sum-of-1d-array/solution.py) | [筆記](leetcode/easy/1480-running-sum-of-1d-array/README.md) |
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | [solution.py](leetcode/easy/1672-richest-customer-wealth/solution.py) | [筆記](leetcode/easy/1672-richest-customer-wealth/README.md) |
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
-| 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：9 題**
-- **難度分布：** Easy 9 題
+- **總題數：10 題**
+- **難度分布：** Easy 10 題
 - **完成時間：** 2024年12月28日 - 12月30日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
@@ -42,6 +43,7 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2024-12-30**: 新增20. Valid Parentheses解法，累積10題
 - **2024-12-30**: 新增387. First Unique Character in a String解法，累積9題
 - **2024-12-30**: 新增Valid Anagram解法，完成8題里程碑
 - **2024-12-29**: 新增Contains Duplicate、Fizz Buzz解法
