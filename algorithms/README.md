@@ -15,6 +15,7 @@
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [solution.py](leetcode/easy/0001-two-sum/solution.py) | [筆記](leetcode/easy/0001-two-sum/README.md) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [solution.py](leetcode/easy/0009-palindrome-number/solution.py) | [筆記](leetcode/easy/0009-palindrome-number/README.md) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [solution.py](leetcode/easy/0020-valid-parentheses/solution.py) | [筆記](leetcode/easy/0020-valid-parentheses/README.md) |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | [solution.py](leetcode/medium/0049-group-anagrams/solution.py) | [筆記](leetcode/medium/0049-group-anagrams/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
@@ -24,8 +25,8 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：10 題**
-- **難度分布：** Easy 10 題
+- **總題數：11 題**
+- **難度分布：** Easy 10 題, Medium 1 題
 - **完成時間：** 2024年12月28日 - 12月30日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
@@ -43,6 +44,7 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2024-12-30**: 新增49. Group Anagrams解法，第一個Medium題目
 - **2024-12-30**: 新增20. Valid Parentheses解法，累積10題
 - **2024-12-30**: 新增387. First Unique Character in a String解法，累積9題
 - **2024-12-30**: 新增Valid Anagram解法，完成8題里程碑
