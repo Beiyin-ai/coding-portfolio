@@ -18,6 +18,7 @@
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | [solution.py](leetcode/medium/0049-group-anagrams/solution.py) | [筆記](leetcode/medium/0049-group-anagrams/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [solution.py](leetcode/medium/0347-top-k-frequent-elements/solution.py) | [筆記](leetcode/medium/0347-top-k-frequent-elements/README.md) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | Easy | [solution.py](leetcode/easy/0412-fizz-buzz/solution.py) | [筆記](leetcode/easy/0412-fizz-buzz/README.md) |
 | 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | [solution.py](leetcode/easy/1480-running-sum-of-1d-array/solution.py) | [筆記](leetcode/easy/1480-running-sum-of-1d-array/README.md) |
@@ -25,9 +26,9 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：11 題**
-- **難度分布：** Easy 10 題, Medium 1 題
-- **完成時間：** 2024年12月28日 - 12月30日
+- **總題數：12 題**
+- **難度分布：** Easy 10 題, Medium 2 題
+- **完成時間：** 2024年12月28日 - 12月31日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
 ## 🏆 學習成就
@@ -44,6 +45,7 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2024-12-31**: 新增347. Top K Frequent Elements解法，第二個Medium題目
 - **2024-12-30**: 新增49. Group Anagrams解法，第一個Medium題目
 - **2024-12-30**: 新增20. Valid Parentheses解法，累積10題
 - **2024-12-30**: 新增387. First Unique Character in a String解法，累積9題
