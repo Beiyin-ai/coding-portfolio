@@ -15,10 +15,10 @@ echo "=== 提交 LeetCode 題目 #$PROBLEM_NUM ==="
 
 # 尋找題目資料夾
 PROBLEM_DIR=""
-if [ -d "algorithms/leetcode/easy/$(printf '%04d' $PROBLEM_NUM)-"* ] 2>/dev/null; then
-    PROBLEM_DIR=$(find algorithms/leetcode/easy -name "$(printf '%04d' $PROBLEM_NUM)-*" -type d 2>/dev/null | head -1)
-elif [ -d "algorithms/leetcode/medium/$(printf '%04d' $PROBLEM_NUM)-"* ] 2>/dev/null; then
-    PROBLEM_DIR=$(find algorithms/leetcode/medium -name "$(printf '%04d' $PROBLEM_NUM)-*" -type d 2>/dev/null | head -1)
+if [ -d "../algorithms/leetcode/easy/$(printf '%04d' $PROBLEM_NUM)-"* ] 2>/dev/null; then
+    PROBLEM_DIR=$(find ../algorithms/leetcode/easy -name "$(printf '%04d' $PROBLEM_NUM)-*" -type d 2>/dev/null | head -1)
+elif [ -d "../algorithms/leetcode/medium/$(printf '%04d' $PROBLEM_NUM)-"* ] 2>/dev/null; then
+    PROBLEM_DIR=$(find ../algorithms/leetcode/medium -name "$(printf '%04d' $PROBLEM_NUM)-*" -type d 2>/dev/null | head -1)
 fi
 
 if [ -z "$PROBLEM_DIR" ]; then
@@ -34,7 +34,7 @@ find "$PROBLEM_DIR" -name "*.pyc" -type f -delete 2>/dev/null || true
 
 # 加入檔案
 git add "$PROBLEM_DIR"
-git add algorithms/README.md
+git add ../algorithms/README.md
 
 # 提交
 git commit -m "feat: add solution for #$PROBLEM_NUM - $DESCRIPTION"
