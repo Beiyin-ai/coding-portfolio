@@ -1,23 +1,18 @@
+from collections import Counter
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         """
-        解法：使用 HashMap 統計字符頻率
+        找出第一個不重複字符的索引
         
-        時間複雜度：O(n) - 兩次遍歷
-        空間複雜度：O(1) - 只有26個小寫字母
+        新解法：使用 Counter 統計頻率，然後遍歷計數字典
+        更清晰易懂，充分利用 Python 標準庫
         """
-        count = {}
+        count = Counter(s)
         
-        # 第一次遍歷：統計每個字符出現次數
-        for char in s:
-            if char in count:
-                count[char] += 1
-            else:
-                count[char] = 1
-        
-        # 第二次遍歷：找第一個唯一字符
-        for i in range(len(s)):
-            if count[s[i]] == 1:
-                return i
+        # 遍歷計數字典，找到第一個頻率為 1 的字符
+        for key, value in count.items():
+            if value == 1:
+                return s.index(key)
         
         return -1
