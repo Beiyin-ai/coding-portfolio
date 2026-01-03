@@ -16,6 +16,7 @@
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [solution.py](leetcode/easy/0009-palindrome-number/solution.py) | [筆記](leetcode/easy/0009-palindrome-number/README.md) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [solution.py](leetcode/easy/0020-valid-parentheses/solution.py) | [筆記](leetcode/easy/0020-valid-parentheses/README.md) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | [solution.py](leetcode/medium/0049-group-anagrams/solution.py) | [筆記](leetcode/medium/0049-group-anagrams/README.md) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [solution.py](leetcode/easy/0121-best-time-to-buy-and-sell-stock/solution.py) | [筆記](leetcode/easy/0121-best-time-to-buy-and-sell-stock/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [solution.py](leetcode/medium/0347-top-k-frequent-elements/solution.py) | [筆記](leetcode/medium/0347-top-k-frequent-elements/README.md) |
@@ -26,8 +27,8 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：12 題**
-- **難度分布：** Easy 10 題, Medium 2 題
+- **總題數：13 題**
+- **難度分布：** Easy 11 題, Medium 2 題
 - **完成時間：** 2024年12月28日 - 12月31日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
@@ -45,6 +46,9 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2024-12-31**: 新增121. Best Time to Buy and Sell Stock解法，貪心演算法應用
+- **2024-12-31**: 更新387. First Unique Character in a String解法，使用Counter
+- **2024-12-31**: 更新412. Fizz Buzz解法，Pythonic列表推導式
 - **2024-12-31**: 新增347. Top K Frequent Elements解法，第二個Medium題目
 - **2024-12-30**: 新增49. Group Anagrams解法，第一個Medium題目
 - **2024-12-30**: 新增20. Valid Parentheses解法，累積10題
