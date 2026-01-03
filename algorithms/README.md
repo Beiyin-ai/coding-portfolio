@@ -13,6 +13,7 @@
 | # | Title | Difficulty | Solution | Notes |
 |---|-------|------------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [solution.py](leetcode/easy/0001-two-sum/solution.py) | [筆記](leetcode/easy/0001-two-sum/README.md) |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [solution.py](leetcode/medium/0003-longest-substring-without-repeating-characters/solution.py) | [筆記](leetcode/medium/0003-longest-substring-without-repeating-characters/README.md) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [solution.py](leetcode/easy/0009-palindrome-number/solution.py) | [筆記](leetcode/easy/0009-palindrome-number/README.md) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [solution.py](leetcode/easy/0020-valid-parentheses/solution.py) | [筆記](leetcode/easy/0020-valid-parentheses/README.md) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | [solution.py](leetcode/medium/0049-group-anagrams/solution.py) | [筆記](leetcode/medium/0049-group-anagrams/README.md) |
@@ -27,9 +28,9 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：13 題**
-- **難度分布：** Easy 11 題, Medium 2 題
-- **完成時間：** 2025年12月22日 - 2026年1月3日
+- **總題數：14 題**
+- **難度分布：** Easy 11 題, Medium 3 題
+- **完成時間：** 2025年12月22日 - 2026年1月4日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
 ## 🏆 學習成就
@@ -46,6 +47,7 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2026-01-03**: 新增3. Longest Substring Without Repeating Characters解法，滑動窗口應用
 - **2026-01-03**: 新增121. Best Time to Buy and Sell Stock解法，貪心演算法應用
 - **2026-01-02**: 新增347. Top K Frequent Elements解法，第二個Medium題目
 - **2026-01-01**: 新增49. Group Anagrams解法，第一個Medium題目
