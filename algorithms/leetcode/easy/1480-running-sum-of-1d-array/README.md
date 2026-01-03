@@ -1,5 +1,7 @@
 # 1480. Running Sum of 1d Array
 
+**完成日期：** 2025-12-26  
+
 ## 問題描述
 給定一個整數陣列 nums，返回其累加和陣列。
 累加和陣列的每個元素 output[i] = sum(nums[0]...nums[i])

@@ -1,5 +1,7 @@
 # 412. Fizz Buzz
 
+**完成日期：** 2025-12-27（首次完成），2026-01-02（優化更新）  
+
 **難度：** Easy  
 **標籤：** Math, String, Simulation  
 **連結：** [LeetCode 412](https://leetcode.com/problems/fizz-buzz/)

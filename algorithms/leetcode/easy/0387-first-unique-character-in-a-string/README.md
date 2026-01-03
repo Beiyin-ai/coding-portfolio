@@ -1,5 +1,7 @@
 # 387. First Unique Character in a String
 
+**完成日期：** 2025-12-30（首次完成），2026-01-02（優化更新）  
+
 **難度：** Easy  
 **標籤：** Hash Table, String  
 **連結：** [LeetCode 387](https://leetcode.com/problems/first-unique-character-in-a-string/)

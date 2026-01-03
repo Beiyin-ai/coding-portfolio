@@ -1,5 +1,7 @@
 # 49. Group Anagrams
 
+**完成日期：** 2026-01-01  
+
 **難度：** Medium  
 **標籤：** Hash Table, String, Sorting  
 **連結：** [LeetCode 49](https://leetcode.com/problems/group-anagrams/)

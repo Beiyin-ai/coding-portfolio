@@ -1,5 +1,7 @@
 # 121. Best Time to Buy and Sell Stock
 
+**完成日期：** 2026-01-03  
+
 **難度：** Easy  
 **標籤：** Array, Dynamic Programming  
 **連結：** [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)

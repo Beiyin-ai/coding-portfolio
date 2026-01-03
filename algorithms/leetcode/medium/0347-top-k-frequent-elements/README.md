@@ -1,5 +1,7 @@
 # 347. Top K Frequent Elements
 
+**完成日期：** 2026-01-02  
+
 **難度：** Medium  
 **標籤：** Array, Hash Table, Divide and Conquer, Sorting, Heap, Bucket Sort  
 **連結：** [LeetCode 347](https://leetcode.com/problems/top-k-frequent-elements/)

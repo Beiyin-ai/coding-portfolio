@@ -1,5 +1,7 @@
 # 20. Valid Parentheses
 
+**完成日期：** 2025-12-31  
+
 **難度：** Easy  
 **標籤：** String, Stack  
 **連結：** [LeetCode 20](https://leetcode.com/problems/valid-parentheses/)

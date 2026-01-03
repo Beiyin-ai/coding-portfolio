@@ -1,5 +1,7 @@
 # 1672. Richest Customer Wealth
 
+**完成日期：** 2025-12-25（首次完成），後續優化  
+
 **難度：** Easy  
 **標籤：** Array, Matrix  
 **連結：** [LeetCode 1672](https://leetcode.com/problems/richest-customer-wealth/)
