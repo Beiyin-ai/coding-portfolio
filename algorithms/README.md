@@ -21,6 +21,7 @@
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [solution.py](leetcode/medium/0347-top-k-frequent-elements/solution.py) | [筆記](leetcode/medium/0347-top-k-frequent-elements/README.md) |
+| 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium | [solution.py](leetcode/medium/0209-minimum-size-subarray-sum/solution.py) | [筆記](leetcode/medium/0209-minimum-size-subarray-sum/README.md) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | Easy | [solution.py](leetcode/easy/0412-fizz-buzz/solution.py) | [筆記](leetcode/easy/0412-fizz-buzz/README.md) |
 | 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | [solution.py](leetcode/easy/1480-running-sum-of-1d-array/solution.py) | [筆記](leetcode/easy/1480-running-sum-of-1d-array/README.md) |
@@ -28,7 +29,7 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：14 題**
+- **總題數：15 題**
 - **難度分布：** Easy 11 題, Medium 3 題
 - **完成時間：** 2025年12月22日 - 2026年1月4日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
@@ -47,6 +48,7 @@
 4. **持續更新機制** - 定期回顧與補充新解法
 
 ## 🔄 更新紀錄
+- **2026-01-04**: 新增209. Minimum Size Subarray Sum解法，滑動窗口應用
 - **2026-01-03**: 新增3. Longest Substring Without Repeating Characters解法，滑動窗口應用
 - **2026-01-03**: 新增121. Best Time to Buy and Sell Stock解法，貪心演算法應用
 - **2026-01-02**: 新增347. Top K Frequent Elements解法，第二個Medium題目
