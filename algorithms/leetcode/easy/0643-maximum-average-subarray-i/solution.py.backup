@@ -1,0 +1,69 @@
+"""
+LeetCode 643. Maximum Average Subarray I
+
+解法：滑動窗口
+時間複雜度：O(n)
+空間複雜度：O(1)
+
+解題歷程：
+這題要求固定長度 k 的最大平均子數組。
+我想到可以用滑動窗口技巧，因為窗口大小固定。
+實際上是求最大總和，再除以 k 得到平均值。
+"""
+
+from typing import List
+
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        "
+        滑動窗口解法
+        
+        思路：
+        1. 用兩個指針 left 和 right 定義窗口
+        2. right 向右移動，累加元素值
+        3. 當窗口大小達到 k 時，更新最大總和
+        4. 移動窗口：減去 nums[left]，left 向右移動
+        5. 遍歷完整個數組後，將最大總和除以 k
+        
+        優點：只需要一次遍歷，效率高
+        注意：使用 float('-inf') 初始化，確保負數也能正確比較
+        "
+        left = 0
+        total = 0
+        max_value = float('-inf')
+
+        for right in range(len(nums)):
+            total += nums[right]
+
+            if right - left + 1 == k:
+                max_value = max(max_value, total)
+                total -= nums[left]
+                left += 1
+
+        return max_value / k
+
+
+# 測試程式碼
+if __name__ == "__main__":
+    solution = Solution()
+
+    test_cases = [
+        ([1,12,-5,-6,50,3], 4, 12.75),  # 範例 1
+        ([5], 1, 5.0),                  # 範例 2
+        ([0,4,0,3,2], 1, 4.0),         # 簡單測試
+        ([1,2,3,4,5], 3, 4.0),         # 遞增數組
+        ([-1,-2,-3,-4,-5], 2, -1.5),   # 負數測試
+    ]
+
+    print("=== Maximum Average Subarray I 測試 ===")
+    print(f"解法：滑動窗口\n")
+
+    for i, (nums, k, expected) in enumerate(test_cases, 1):
+        result = solution.findMaxAverage(nums, k)
+        # 允許計算誤差小於 10^-5
+        status = "✓" if abs(result - expected) < 1e-5 else "✗"
+        print(f"測試 {i}: {status}")
+        print(f"  輸入: nums = {nums}, k = {k}")
+        print(f"  預期: {expected}")
+        print(f"  結果: {result:.5f}")
+        print()
