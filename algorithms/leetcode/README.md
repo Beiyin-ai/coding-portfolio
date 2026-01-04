@@ -21,6 +21,7 @@
 | 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [solution.py](easy/1480-running-sum-of-1d-array/solution.py) | [筆記](easy/1480-running-sum-of-1d-array/README.md) |
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [solution.py](easy/1672-richest-customer-wealth/solution.py) | [筆記](easy/1672-richest-customer-wealth/README.md) |
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | [solution.py](easy/2235-add-two-integers/solution.py) | [筆記](easy/2235-add-two-integers/README.md) |
+| 643 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [solution.py](easy/0643-maximum-average-subarray-i/solution.py) | [筆記](easy/0643-maximum-average-subarray-i/README.md) |
 
 ### Medium 題目（4題）
 | # | Title | Solution | Notes |
