@@ -1,60 +1,94 @@
-# Taiwan Reservoir Monitoring System
+# 台灣水庫水情監控系統
 
-A real-time monitoring system for Taiwan's reservoir water levels with automated data collection, processing, and visualization.
+一個自動化擷取、處理和視覺化台灣水庫即時水情的監控系統。
 
-## 🎯 Features
-- **Automated Data Collection**: Scrapes real-time data from 21 major reservoirs
-- **Data Processing**: Cleans and analyzes water level statistics
-- **Visualization**: Generates interactive charts and reports
-- **Multi-format Export**: CSV, Excel, and PNG outputs
-- **Error Handling**: Robust retry mechanisms and logging
+## 🎯 功能特色
+- **自動化資料擷取**：從 21 個主要水庫即時抓取數據
+- **資料處理分析**：清洗資料並計算水情統計
+- **視覺化圖表**：自動生成水庫蓄水率圖表
+- **多格式輸出**：支援 CSV、Excel、PNG 格式
+- **錯誤處理機制**：完整的重試機制和日誌記錄
 
-## 📊 Data Points Collected
-- Reservoir name and location
-- Current water level percentage
-- Effective storage capacity (cubic meters)
-- Daily water level change
-- Last update timestamp
+## 📊 擷取的資料項目
+- 水庫名稱與位置
+- 當前蓄水百分比
+- 有效蓄水量（立方公尺）
+- 每日水位變化
+- 最後更新時間戳記
 
-## 🚀 Quick Start
+## 🚀 快速開始
 
-### Prerequisites
+### 環境需求
 - Python 3.8+
-- Chrome Browser
+- Chrome 瀏覽器
 - ChromeDriver
 
-### Installation
+### 安裝步驟
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Usage
+### 執行方式
 
 ```bash
 python main.py
 ```
 
-## 📁 Output Files
-- `reservoir_taiwan.csv` - Raw data in CSV format
-- `reservoir_taiwan.xlsx` - Processed data in Excel format  
-- `reservoir_percent_chart.png` - Visualization chart
+## 📁 輸出檔案
+- `reservoir_taiwan.csv` - 原始資料（CSV 格式）
+- `reservoir_taiwan.xlsx` - 處理後資料（Excel 格式）
+- `reservoir_percent_chart.png` - 視覺化圖表
 
-## 🛠️ Technologies Used
-- **Selenium**: Web automation and data scraping
-- **Pandas**: Data processing and analysis
-- **Matplotlib**: Data visualization
-- **Openpyxl**: Excel file generation
+## 🛠️ 使用技術
+- **Selenium**：網頁自動化與資料擷取
+- **Pandas**：資料處理與分析
+- **Matplotlib**：資料視覺化
+- **Openpyxl**：Excel 檔案生成
 
-## 📈 Sample Output
-The system provides:
-- Average water level across all reservoirs
-- Highest and lowest reservoir levels
-- Daily change statistics
-- Color-coded visualization based on water levels
+## 📈 系統輸出
+系統提供以下統計資訊：
+- 所有水庫平均蓄水率
+- 最高與最低蓄水率水庫
+- 每日水位變化統計
+- 根據蓄水率顏色編碼的視覺化圖表
 
-## 🔧 Configuration
-No configuration required - runs with default settings.
+## 🔧 設定配置
+無需額外設定 - 使用預設配置即可執行。
 
-## 📝 License
+## 📝 專案結構
+```
+Taiwan-Reservoir-Monitoring-System/
+├── main.py              # 主程式
+├── README.md           # 說明文件
+└── requirements.txt    # 依賴套件
+```
+
+## 🎯 學習目標
+這個專案展示了：
+1. 網頁爬蟲實務應用
+2. 資料清洗與處理流程
+3. 自動化報表生成
+4. 錯誤處理與日誌記錄
+5. 資料視覺化技巧
+
+## 🔄 未來擴展方向
+1. 加入資料庫儲存歷史數據
+2. 建立網頁介面顯示數據
+3. 設定定期自動執行
+4. 加入異常警報通知功能
+5. 擴充更多水情數據來源
+
+## ⚠️ 注意事項
+- 請尊重資料來源網站的使用條款
+- 避免過度頻繁擷取造成伺服器負擔
+- 資料僅供參考，實際水情以官方公告為準
+
+## 📝 授權條款
 MIT License
+
+---
+
+## 🌐 語言版本
+- [中文版本](README.md)
+- [English Version](README.en.md)
