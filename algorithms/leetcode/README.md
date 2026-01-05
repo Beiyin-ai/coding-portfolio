@@ -28,8 +28,9 @@
 |---|-------|----------|-------|
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [solution.py](medium/0003-longest-substring-without-repeating-characters/solution.py) | [筆記](medium/0003-longest-substring-without-repeating-characters/README.md) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [solution.py](medium/0049-group-anagrams/solution.py) | [筆記](medium/0049-group-anagrams/README.md) |
-| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [solution.py](medium/0347-top-k-frequent-elements/solution.py) | [筆記](medium/0347-top-k-frequent-elements/README.md) |
+| 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [solution.py](medium/0155-min-stack/solution.py) | [筆記](medium/0155-min-stack/README.md) |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [solution.py](medium/0209-minimum-size-subarray-sum/solution.py) | [筆記](medium/0209-minimum-size-subarray-sum/README.md) |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [solution.py](medium/0347-top-k-frequent-elements/solution.py) | [筆記](medium/0347-top-k-frequent-elements/README.md) |
 
 ## 📈 學習進度
 - **開始日期：** 2025-12-22
