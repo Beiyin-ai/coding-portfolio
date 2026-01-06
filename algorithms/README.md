@@ -21,6 +21,7 @@
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | [solution.py](leetcode/medium/0155-min-stack/solution.py) | [筆記](leetcode/medium/0155-min-stack/README.md) |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium | [solution.py](leetcode/medium/0209-minimum-size-subarray-sum/solution.py) | [筆記](leetcode/medium/0209-minimum-size-subarray-sum/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [solution.py](leetcode/easy/0217-contains-duplicate/solution.py) | [筆記](leetcode/easy/0217-contains-duplicate/README.md) |
+| 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | [solution.py](leetcode/easy/0232-implement-queue-using-stacks/solution.py) | [筆記](leetcode/easy/0232-implement-queue-using-stacks/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [solution.py](leetcode/easy/0242-valid-anagram/solution.py) | [筆記](leetcode/easy/0242-valid-anagram/README.md) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [solution.py](leetcode/medium/0347-top-k-frequent-elements/solution.py) | [筆記](leetcode/medium/0347-top-k-frequent-elements/README.md) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | [solution.py](leetcode/easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](leetcode/easy/0387-first-unique-character-in-a-string/README.md) |
@@ -31,9 +32,9 @@
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | Easy | [solution.py](leetcode/easy/2235-add-two-integers/solution.py) | [筆記](leetcode/easy/2235-add-two-integers/README.md) |
 
 ## 📈 學習進度統計
-- **總題數：15 題**
-- **難度分布：** Easy 11 題, Medium 4 題
-- **完成時間： 2025年12月22日 - 2026年1月5日
+- **總題數：18 題**
+- **難度分布：** Easy 13 題, Medium 5 題
+- **完成時間：** 2025年12月22日 - 2026年1月6日
 - **學習重點：** 暴力解法 → 優化解法 → 多重解法比較
 
 ## 🏆 學習成就
