@@ -1,13 +1,13 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：' $TOTAL ' 題
-- **難度分布：** Easy ' $EASY_COUNT ' 題, Medium ' $MEDIUM_COUNT ' 題
+- **總題數：** 22 題
+- **難度分布：** Easy 15 題, Medium 7 題
 - **更新日期：** 2026-01-11
 
 ## 🗂️ 題目列表
 
-### Easy 題目（' $EASY_COUNT '題）
+### Easy 題目（15題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](easy/0001-two-sum/solution.py) | [筆記](easy/0001-two-sum/README.md) |
@@ -26,7 +26,7 @@
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [solution.py](easy/1672-richest-customer-wealth/solution.py) | [筆記](easy/1672-richest-customer-wealth/README.md) |
 | 2235 | [Add Two Integers](https://leetcode.com/problems/add-two-integers/) | [solution.py](easy/2235-add-two-integers/solution.py) | [筆記](easy/2235-add-two-integers/README.md) |
 
-### Medium 題目（' $MEDIUM_COUNT '題）
+### Medium 題目（7題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [solution.py](medium/0003-longest-substring-without-repeating-characters/solution.py) | [筆記](medium/0003-longest-substring-without-repeating-characters/README.md) |
