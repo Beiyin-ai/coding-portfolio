@@ -49,7 +49,7 @@
 ## 📂 Featured Projects | 精選項目
 
 ### 🔗 [Algorithmic Problem-Solving Repository](algorithms/)
-**21+ LeetCode Solutions | 21+ 力扣題解**
+**21+ LeetCode Solutions | 21+ leetcode題解**
 - **Tech**: Python
 - **Highlights**: 每題包含**思路分析、時間/空間複雜度、多重解法比較**。系統化建立解題思維模型。
 - **Skills Demonstrated**: 數據結構、演算法、系統化思考、文檔撰寫。
@@ -75,8 +75,21 @@
 
 ## 📬 Let's Connect | 聯繫我
 
-- **GitHub Portfolio:** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
+### 📧 聯絡資訊 | Contact Information
+- **Email:** [chiupeiyin08@gmail.com](mailto:chiupeiyin08@gmail.com)
+- **Phone:** [+886-983-689-716]
+- **Location:** New Taipei, Taiwan | 台灣新北
+
+### 🌐 線上履歷與作品集 | Online Resume & Portfolio
+- **GitHub:** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
+- **作品集專案:** [coding-portfolio](https://github.com/Beiyin-ai/coding-portfolio)
+
+### 📄 證照與能力 | Certifications & Qualifications
 - **語言能力:** TOEIC 795 (English) | DELE B1 (Spanish)
+- **專業認證:** ITS Python International Certification (2025)
+- **其他證照:** 國貿技術士丙級證照
+
+---
 
 > *"從解一道題到建一個系統，我正走在成為可靠工程師的路上。"*
 > *"From solving one problem to building a system, I am on the path to becoming a reliable engineer."*
