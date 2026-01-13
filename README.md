@@ -1,149 +1,82 @@
-# 👨‍💻 程式設計作品集 - 邱佩吟 | 全端工程師應徵者
-# 👨‍💻 Coding Portfolio - Chiu Pei-Yin | Full-Stack Developer Applicant
+# 👋 邱佩吟 | Chiu Pei-Yin
+### Aspiring Full-Stack Developer with a Security Mindset | 具備安全意識的全端開發學習者
 
-## 🎓 關於我 | About Me
-文藻外語大學英文系副修西班牙文畢業，具備國際貿易專業證照與跨文化溝通能力。
+**🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 Targeting Delta Electronics | 目標鎖定台達電子**
 
-**現況：** 正在泰山職訓局參與「AI人工智慧與跨平台APP開發應用實務」課程，
-系統化學習 **Python 後端開發**、**AI 應用整合**、**跨平台開發**等技術，
-目標轉型成為具備產品安全意識的全端開發工程師。
-
-**📍 核心能力：全端開發潛力 + 產品安全意識**
-從基礎功能開始，逐步建立完整系統，重視程式碼品質與系統安全性。
-結合職訓所學與實作專案，建立可展示的技術作品集。
-
-## 🏆 最新成就 | Latest Achievement
-✅ **2025年1月8日 - ITS Python 專業認證考試通過**
-Successfully passed the ITS Python Professional Certification exam on Jan 8, 2025
-
-## 🎯 應徵台達電子全端工程師的優勢 | Advantages for Delta Electronics Position
-### 符合工作內容需求 | Matching Job Requirements
-1. **Python 後端開發** - 已完成 21 題 LeetCode，熟悉資料結構與演算法
-2. **前端學習潛力** - 正在學習 Vue.js/ReactJS 前端框架
-3. **系統設計思維** - 從演算法解題培養出的問題分析與解決能力
-4. **安全意識** - 對產品安全有高度興趣，願意學習相關應用開發
-
-### 技術成長軌跡 | Technical Growth Path
-- ✅ **基礎建立** - 21 題 LeetCode 完整解法，時間/空間複雜度分析
-- ✅ **Python 認證** - 2025/1/8 通過 ITS Python 專業認證考試
-- ✅ **Git 專業** - 完整版本控制與作品集管理
-- 🔄 **系統學習** - 泰山職訓 AI 與跨平台開發課程進行中
+> From a background in linguistics and international trade, I successfully transitioned into tech with proven learning ability — **earning the ITS Python International Certification from scratch within 2 months**. Currently building full-stack skills (Python, JavaScript, Docker) through systematic training, aiming to contribute to product security development.
+>
+> 從外語與國際貿易背景成功轉型，憑藉強大的學習力，在**兩個月內從零基礎考取 ITS Python 國際證照**。現正透過系統化課程建構全端技能，目標成為能為產品安全團隊貢獻的工程師。
 
 ---
 
-# About Me (English)
-Graduated from Wenzao Ursuline University of Languages with a major in English and minor in Spanish. Holds international trade professional certifications and cross-cultural communication skills.
+## 🏆 Core Strengths | 核心優勢
 
-**Current Status:** Participating in the "AI Artificial Intelligence and Cross-platform APP Development Practical Application" course at Taishan Vocational Training Center,
-systematically learning **Python backend development**, **AI application integration**, **cross-platform development** and other technologies,
-aiming to transition into a full-stack developer with product security awareness.
-
-**📍 Core Competencies: Full-Stack Development Potential + Product Security Awareness**
-Starting from basic functionalities, gradually building complete systems with emphasis on code quality and system security.
-Combining vocational training with practical projects to build a demonstrable technical portfolio.
-
-## Latest Achievement
-✅ **January 8, 2025 - Successfully passed ITS Python Professional Certification Exam**
-This certification validates my Python programming skills and problem-solving abilities.
-
-## Advantages for Delta Electronics Full-Stack Developer Position
-### Matching Job Requirements
-1. **Python Backend Development** - Completed 21 LeetCode problems, familiar with data structures and algorithms
-2. **Frontend Learning Potential** - Currently learning Vue.js/ReactJS frontend frameworks
-3. **System Design Thinking** - Problem analysis and solving skills developed through algorithm practice
-4. **Security Awareness** - High interest in product security, willing to learn related application development
-
-### Technical Growth Path
-- ✅ **Foundation Building** - 21 complete LeetCode solutions with time/space complexity analysis
-- ✅ **Python Certification** - Passed ITS Python Professional Certification exam on 2025/1/8
-- ✅ **Git Expertise** - Complete version control and portfolio management
-- 🔄 **Systematic Learning** - Taishan vocational training in AI and cross-platform development in progress
+| Strength | Evidence |
+|----------|----------|
+| **🚀 快速學習與執行** | ITS Python 認證 (2個月內從零考取) • 系統化學習泰山職訓AI/全端課程 |
+| **🧠 紮實的邏輯與問題解決** | 21+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
+| **🛡️ 產品安全意識與興趣** | 主動將安全思維納入學習目標 • 對台達資安團隊的使命深感認同 |
+| **🌍 溝通與跨領域協作** | 多語言能力 (TOEIC 795, DELE B1) • 社團領導與跨國實習經驗 |
 
 ---
 
-## 🛠️ 技術能力 | Technical Skills
-### 後端開發 | Backend Development
-- **Python**: █████████░ 90%
-  - 21 題 LeetCode 完整解法與文檔 | 21 complete LeetCode solutions with documentation
-  - ITS Python 專業認證 | ITS Python Professional Certification
-  - 熟悉資料結構：陣列、鏈表、堆疊、佇列、哈希表、圖 | Familiar with data structures: arrays, linked lists, stacks, queues, hash tables, graphs
-  - 掌握演算法：雙指針、滑動窗口、深度優先搜索、廣度優先搜索 | Mastered algorithms: two pointers, sliding window, DFS, BFS
+## 🛠️ Technical Skills | 技術技能
 
-### 前端開發（學習中）| Frontend Development (Learning)
-- **JavaScript/HTML/CSS**: █████░░░░░ 50%
-  - 泰山職訓課程學習 Vue.js/ReactJS 框架 | Learning Vue.js/ReactJS frameworks in vocational training
-  - 了解現代前端開發流程與工具鏈 | Understanding modern frontend development workflow and toolchain
+### Backend | 後端
+![Python](https://img.shields.io/badge/Python-Intermediate-blue?logo=python)
+![Algorithms](https://img.shields.io/badge/Algorithms-21%2B_LeetCode-green)
+- **Python**: ITS 專業認證 | 21+ LeetCode 題解 (數據結構與演算法)
+- **Web 基礎**: 理解 HTTP 與前後端溝通概念
+- **下一步學習**: Web 框架與 API 設計
 
-### 開發工具 | Development Tools
-- **Git/GitHub**: ██████████ 100%
-  - 完整 Git Flow 實踐：分支管理、Pull Request、Code Review | Complete Git Flow practice: branch management, PR, code review
-  - 專案文檔化與版本控制管理 | Project documentation and version control management
+### Frontend | 前端
+![JavaScript](https://img.shields.io/badge/JavaScript-Intermediate-yellow?logo=javascript)
+![HTML5](https://img.shields.io/badge/HTML5-Intermediate-orange?logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-Intermediate-blue?logo=css3)
+- **Core**: HTML5, CSS3, JavaScript (ES6+)
+- **Framework**: 課程中學習 Vue.js/ReactJS 基礎
 
-### 軟技能 | Soft Skills
-- **英文溝通**: ████████░░ 80% - TOEIC 795（藍色證書）| English Communication: TOEIC 795 (Blue Certificate)
-- **問題解決**: █████████░ 90% - 從演算法解題培養的系統化思考 | Problem Solving: systematic thinking from algorithm practice
-- **學習能力**: ██████████ 100% - 快速學習新技術並應用於實作 | Learning Ability: quickly learn new technologies and apply to practice
-
----
-
-## 📁 作品集結構 | Portfolio Structure
-| 目錄 Directory | 用途 Purpose | 狀態 Status | 進度 Progress |
-|---------------|-------------|------------|--------------|
-| [🧠 演算法練習](algorithms/) | LeetCode 題解與學習筆記 | ✅ **進行中** | 21 題完整解法 |
-| [📖 學習筆記](learning/) | 技術學習記錄 | ✅ **進行中** | Kotlin、Python 學習範例 |
-| [🏆 證書認證](certificates/) | 語言與專業認證 | ✅ **已更新** | 完整證書記錄 |
+### DevOps & Tools | 開發維運與工具
+![Git](https://img.shields.io/badge/Git-Expert-orange?logo=git)
+![Docker](https://img.shields.io/badge/Docker-Learning-blue?logo=docker)
+![Linux](https://img.shields.io/badge/Linux-Intermediate-black?logo=linux)
+- **Version Control**: Git, GitHub/GitLab, Git Flow
+- **Containerization**: Docker (課程實作經驗)
+- **Environment**: Linux 命令列操作與基本維運
 
 ---
 
-## 🏆 技術成就 | Technical Achievements
-### 演算法能力展示（已解決 21 題 LeetCode）| Algorithm Skills (21 LeetCode Problems Solved)
-#### 已掌握的核心技術 | Core Technologies Mastered
-1. **雙指針技巧** - 26. Remove Duplicates, 344. Reverse String | Two Pointers Technique
-2. **哈希表應用** - 1. Two Sum, 49. Group Anagrams, 347. Top K Frequent Elements | Hash Table Applications
-3. **深度優先搜索** - 133. Clone Graph, 200. Number of Islands | Depth-First Search
-4. **滑動窗口** - 209. Minimum Size Subarray Sum | Sliding Window
-5. **堆疊/佇列** - 20. Valid Parentheses, 155. Min Stack, 232. Implement Queue using Stacks | Stacks/Queues
+## 📂 Featured Projects | 精選項目
 
-#### 解題特點 | Problem-Solving Characteristics
-- ✅ **多重解法** - 從暴力解到最佳化解 | Multiple Solutions: from brute force to optimal
-- ✅ **完整文檔** - 每題包含思路分析、複雜度分析、測試案例 | Complete Documentation: thought process, complexity analysis, test cases
-- ✅ **系統學習** - 建立個人解題模式與知識體系 | Systematic Learning: personal problem-solving patterns and knowledge system
+### 🔗 [Algorithmic Problem-Solving Repository](algorithms/)
+**21+ LeetCode Solutions | 21+ 力扣題解**
+- **Tech**: Python
+- **Highlights**: 每題包含**思路分析、時間/空間複雜度、多重解法比較**。系統化建立解題思維模型。
+- **Skills Demonstrated**: 數據結構、演算法、系統化思考、文檔撰寫。
 
----
-
-## 🎯 與台達電子職缺的契合度 | Fit for Delta Electronics Position
-### 符合「必要技能」的學習計畫 | Learning Plan Matching "Required Skills"
-| 技能要求 Skill Requirement | 目前狀態 Current Status | 學習計畫 Learning Plan |
-|----------------------------|------------------------|------------------------|
-| Python 及 Flask 框架 | 🔄 學習中 | 泰山職訓課程 + 個人專案實作 |
-| RESTful API 開發 | 🔄 學習中 | 2025年1-2月完成實作專案 |
-| 前端框架 (Vue/React) | 🔄 學習中 | 職訓課程 + 前端練習專案 |
-| SQL/NoSQL 資料庫 | 🔄 學習中 | 資料庫設計與實作練習 |
-| Git/GitHub 流程 | ✅ 已掌握 | 已在作品集中完整實踐 |
+### 📚 [Learning Journey & Notes](learning/)
+**公開的學習筆記庫 | Public Learning Notes**
+- 記錄從 Python 基礎到全端開發的學習軌跡。
+- 體現**持續學習、知識梳理與分享**的工程師習慣。
 
 ---
 
-## 📅 學習計畫（2025年）| Learning Plan (2025)
-### 第一季：技術深化 | Q1: Technical Deepening
-- **1月**：完成 ITS Python 認證 + Flask RESTful API 專案 | Jan: Complete ITS Python certification + Flask RESTful API project
-- **2月**：學習 Vue.js 前端框架 + 前後端整合練習 | Feb: Learn Vue.js frontend framework + full-stack integration practice
-- **3月**：準備數位乙級檢定 + 全端專案實作 | Mar: Prepare Digital Level B exam + full-stack project implementation
+## 🎯 Why I'm a Fit for Delta | 為何我適合台達
 
-### 第二季：專案實踐 | Q2: Project Practice
-- 建立完整的產品安全相關應用原型 | Build complete product security application prototype
-- 實作單元測試與整合測試 | Implement unit tests and integration tests
-- 撰寫技術文件與系統架構設計 | Write technical documentation and system architecture design
+我深入研究職缺描述，我的學習路徑與團隊需求高度重合：
 
----
-
-## 🔗 聯繫方式 | Contact Information
-- **GitHub**: [Beiyin-ai](https://github.com/Beiyin-ai)
-- **作品集**: [coding-portfolio](https://github.com/Beiyin-ai/coding-portfolio)
-- **學習歷程**: 完整記錄從基礎到進階的技術成長軌跡 | Learning Journey: Complete record of technical growth from basic to advanced
+1.  **核心基礎紮實**：具備 Python 程式邏輯、數據結構與演算法能力，這是學習任何框架的堅實基礎。
+2.  **技術棧對齊中**：正系統化學習職缺所需的前端(Vue.js/React)與開發工具(Docker, Git, Linux)。
+3.  **安全意識與熱情**：對「產品資安解決方案」充滿好奇與熱情，渴望在實戰中學習並貢獻。
+4.  **成長型心態**：強大的學習引擎與務實態度，能快速融入團隊的技術文化並分擔基礎開發任務。
+5.  **協作與溝通**：過往經驗證明我能有效進行團隊協作與跨領域溝通，確保專案順利推進。
 
 ---
 
-*程式開發 • 持續學習 • 產品安全 • 團隊協作*
-*Code Development • Continuous Learning • Product Security • Team Collaboration*
-*從演算法基礎出發，建立全端開發能力，貢獻於產品安全應用開發*
-*Starting from algorithm fundamentals, building full-stack development capabilities, contributing to product security application development*
+## 📬 Let's Connect | 聯繫我
+
+- **GitHub Portfolio:** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
+- **語言能力:** TOEIC 795 (English) | DELE B1 (Spanish)
+
+> *"從解一道題到建一個系統，我正走在成為可靠工程師的路上。"*
+> *"From solving one problem to building a system, I am on the path to becoming a reliable engineer."*
