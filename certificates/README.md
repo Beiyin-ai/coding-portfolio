@@ -59,7 +59,7 @@
 ## 📝 證書補充說明 | Certificate Additional Information
 
 **教育背景：** | **Educational Background:**
-- 文藻外語大學專科部，英文與西班牙文雙主修（2020年畢業）| Wenzao Ursuline University, double major in English and Spanish (Graduated 2020)
+- 文藻外語大學專科部，主修英文副修西班牙文（2020年畢業）| Wenzao Ursuline University, major in English and minor in Spanish (Graduated 2020)
 
 **領導與活動經驗**（詳細內容請參閱其他專區）| **Leadership and Activity Experience** (See other sections for details):
 - 英文系學生會會長、籃球社副社長 | English Department Student Association President, Basketball Club Vice President
