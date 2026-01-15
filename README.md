@@ -3,9 +3,9 @@
 
 **🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 Targeting Delta Electronics | 目標鎖定台達電子**
 
-> From a background in linguistics and international trade, I successfully transitioned into tech with proven learning ability — **earning the ITS Python International Certification from scratch within 2 months**. Currently building full-stack skills (Python, JavaScript, Docker) through systematic training, aiming to contribute to product security development.
+> From a background in linguistics and international trade, I successfully transitioned into tech with proven learning ability — **earning the ITS Python International Certification (passed Jan 8, 2025) from scratch within 2 months**. Currently building full-stack skills (Python, JavaScript, Docker) through systematic training, aiming to contribute to product security development.
 >
-> 從外語與國際貿易背景成功轉型，憑藉強大的學習力，在**兩個月內從零基礎考取 ITS Python 國際證照**。現正透過系統化課程建構全端技能，目標成為能為產品安全團隊貢獻的工程師。
+> 從外語與國際貿易背景成功轉型，憑藉強大的學習力，在**兩個月內從零基礎考取 ITS Python 國際證照 (2025年1月8日通過)**。現正透過系統化課程建構全端技能，目標成為能為產品安全團隊貢獻的工程師。
 
 ---
 
@@ -24,8 +24,8 @@
 
 ### Backend | 後端
 ![Python](https://img.shields.io/badge/Python-Intermediate-blue?logo=python)
-![Algorithms](https://img.shields.io/badge/Algorithms-21%2B_LeetCode-green)
-- **Python**: ITS 專業認證 | 21+ LeetCode 題解 (數據結構與演算法)
+![Algorithms](https://img.shields.io/badge/Algorithms-25+_LeetCode-green)
+- **Python**: ITS 專業認證 (已取得) | 25+ LeetCode 題解| 21+ LeetCode 題解 (數據結構與演算法)
 - **Web 基礎**: 理解 HTTP 與前後端溝通概念
 - **下一步學習**: Web 框架與 API 設計
 
@@ -49,7 +49,7 @@
 ## 📂 Featured Projects | 精選項目
 
 ### 🔗 [Algorithmic Problem-Solving Repository](algorithms/)
-**21+ LeetCode Solutions | 21+ leetcode題解**
+**25+ LeetCode Solutions (18 Easy, 7 Medium) | 25+ LeetCode題解 (18簡單, 7中等)**
 - **Tech**: Python
 - **Highlights**: 每題包含**思路分析、時間/空間複雜度、多重解法比較**。系統化建立解題思維模型。
 - **Skills Demonstrated**: 數據結構、演算法、系統化思考、文檔撰寫。
