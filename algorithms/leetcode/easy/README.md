@@ -1,8 +1,8 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：27 題
-- **難度分布：** Easy 19 題, Medium 8 題
+- **總題數：** 25 題
+- **難度分布：** Easy 18 題, Medium 7 題
 - **更新日期：** 2026-01-11
 
 ## 🗂️ 題目列表
@@ -12,9 +12,12 @@
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](0001-two-sum/solution.py) | [筆記](0001-two-sum/README.md) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [solution.py](0009-palindrome-number/solution.py) | [筆記](0009-palindrome-number/README.md) |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [solution.py](0014-longest-common-prefix/solution.py) | [筆記](0014-longest-common-prefix/README.md) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [solution.py](0020-valid-parentheses/solution.py) | [筆記](0020-valid-parentheses/README.md) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [solution.py](0026-remove-duplicates-from-sorted-array/solution.py) | [筆記](0026-remove-duplicates-from-sorted-array/README.md) |
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [solution.py](0067-add-binary/solution.py) | [筆記](0067-add-binary/README.md) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [solution.py](0121-best-time-to-buy-and-sell-stock/solution.py) | [筆記](0121-best-time-to-buy-and-sell-stock/README.md) |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [solution.py](0125-valid-palindrome/solution.py) | [筆記](0125-valid-palindrome/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [solution.py](0217-contains-duplicate/solution.py) | [筆記](0217-contains-duplicate/README.md) |
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [solution.py](0232-implement-queue-using-stacks/solution.py) | [筆記](0232-implement-queue-using-stacks/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [solution.py](0242-valid-anagram/solution.py) | [筆記](0242-valid-anagram/README.md) |
