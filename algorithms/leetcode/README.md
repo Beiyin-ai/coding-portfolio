@@ -1,9 +1,9 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：26 題
+- **總題數：** 26 題
 - **難度分布：** Easy 19 題, Medium 7 題
-- **更新日期：** 2026-01-11
+- **更新日期：** 2026-01-15
 
 ## 🗂️ 題目列表
 
@@ -16,6 +16,7 @@
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [solution.py](easy/0020-valid-parentheses/solution.py) | [筆記](easy/0020-valid-parentheses/README.md) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [solution.py](easy/0026-remove-duplicates-from-sorted-array/solution.py) | [筆記](easy/0026-remove-duplicates-from-sorted-array/README.md) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [solution.py](easy/0067-add-binary/solution.py) | [筆記](easy/0067-add-binary/README.md) |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [solution.py](easy/0088-merge-sorted-array/solution.py) | [筆記](easy/0088-merge-sorted-array/README.md) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [solution.py](easy/0121-best-time-to-buy-and-sell-stock/solution.py) | [筆記](easy/0121-best-time-to-buy-and-sell-stock/README.md) |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [solution.py](easy/0125-valid-palindrome/solution.py) | [筆記](easy/0125-valid-palindrome/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [solution.py](easy/0217-contains-duplicate/solution.py) | [筆記](easy/0217-contains-duplicate/README.md) |
@@ -53,4 +54,3 @@
 
 ---
 *持續學習，每日進步*
-
