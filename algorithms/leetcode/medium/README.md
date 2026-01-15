@@ -7,7 +7,7 @@
 
 ## 🗂️ 題目列表
 
-### Medium 題目（8題）
+### Medium 題目（7題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [solution.py](0003-longest-substring-without-repeating-characters/solution.py) | [筆記](0003-longest-substring-without-repeating-characters/README.md) |

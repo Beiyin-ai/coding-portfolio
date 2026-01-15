@@ -7,7 +7,7 @@
 
 ## 🗂️ 題目列表
 
-### Easy 題目（19題）
+### Easy 題目（18題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](0001-two-sum/solution.py) | [筆記](0001-two-sum/README.md) |
