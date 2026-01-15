@@ -1,13 +1,13 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：** 22 題
-- **難度分布：** Easy 15 題, Medium 7 題
+- **總題數：27 題
+- **難度分布：** Easy 19 題, Medium 8 題
 - **更新日期：** 2026-01-11
 
 ## 🗂️ 題目列表
 
-### Easy 題目（15題）
+### Easy 題目（19題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](0001-two-sum/solution.py) | [筆記](0001-two-sum/README.md) |
