@@ -49,7 +49,7 @@
 ## 📂 Featured Projects | 精選項目
 
 ### 🔗 [Algorithmic Problem-Solving Repository](algorithms/)
-**25+ LeetCode Solutions (18 Easy, 7 Medium) | 25+ LeetCode題解 (18簡單, 7中等)**
+**26+ LeetCode Solutions (19 Easy, 7 Medium) | 25+ LeetCode題解 (18簡單, 7中等)**
 - **Tech**: Python
 - **Highlights**: 每題包含**思路分析、時間/空間複雜度、多重解法比較**。系統化建立解題思維模型。
 - **Skills Demonstrated**: 數據結構、演算法、系統化思考、文檔撰寫。
