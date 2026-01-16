@@ -1,13 +1,13 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：** 26 題
-- **難度分布：** Easy 19 題, Medium 7 題
+- **總題數：** 27 題
+- **難度分布：** Easy 20 題, Medium 7 題
 - **更新日期：** 2026-01-15
 
 ## 🗂️ 題目列表
 
-### Easy 題目（19題）
+### Easy 題目（20題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](easy/0001-two-sum/solution.py) | [筆記](easy/0001-two-sum/README.md) |
@@ -23,6 +23,7 @@
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [solution.py](easy/0232-implement-queue-using-stacks/solution.py) | [筆記](easy/0232-implement-queue-using-stacks/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [solution.py](easy/0242-valid-anagram/solution.py) | [筆記](easy/0242-valid-anagram/README.md) |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [solution.py](easy/0344-reverse-string/solution.py) | [筆記](easy/0344-reverse-string/README.md) |
+| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [solution.py](easy/0349-intersection-of-two-arrays/solution.py) | [筆記](easy/0349-intersection-of-two-arrays/README.md) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [solution.py](easy/0387-first-unique-character-in-a-string/solution.py) | [筆記](easy/0387-first-unique-character-in-a-string/README.md) |
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [solution.py](easy/0412-fizz-buzz/solution.py) | [筆記](easy/0412-fizz-buzz/README.md) |
 | 643 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [solution.py](easy/0643-maximum-average-subarray-i/solution.py) | [筆記](easy/0643-maximum-average-subarray-i/README.md) |
