@@ -14,7 +14,7 @@
 | Strength | Evidence |
 |----------|----------|
 | **🚀 快速學習與執行** | ITS Python 認證 (2個月內從零考取) • 系統化學習泰山職訓AI/全端課程 |
-| **🧠 紮實的邏輯與問題解決** | 21+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
+| **🧠 紮實的邏輯與問題解決** | 29+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
 | **🛡️ 產品安全意識與興趣** | 主動將安全思維納入學習目標 • 對台達資安團隊的使命深感認同 |
 | **🌍 溝通與跨領域協作** | 多語言能力 (TOEIC 795, DELE B1) • 社團領導與跨國實習經驗 |
 
@@ -25,7 +25,7 @@
 ### Backend | 後端
 ![Python](https://img.shields.io/badge/Python-Intermediate-blue?logo=python)
 ![Algorithms](https://img.shields.io/badge/Algorithms-25+_LeetCode-green)
-- **Python**: ITS 專業認證 (已取得) | 25+ LeetCode 題解| 21+ LeetCode 題解 (數據結構與演算法)
+- **Python**: ITS 專業認證 (已取得) | 29+ LeetCode 題解| 25+ LeetCode 題解| 29+ LeetCode 題解 (數據結構與演算法)
 - **Web 基礎**: 理解 HTTP 與前後端溝通概念
 - **下一步學習**: Web 框架與 API 設計
 
