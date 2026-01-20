@@ -1,13 +1,13 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：** 30 題
-- **難度分布：** Easy 23 題, Medium 7 題
+- **總題數：** 31 題
+- **難度分布：** Easy 24 題, Medium 7 題
 - **更新日期：** 2026-01-16
 
 ## 🗂️ 題目列表
 
-### Easy 題目（23題）
+### Easy 題目（24題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](easy/0001-two-sum/solution.py) | [筆記](easy/0001-two-sum/README.md) |
@@ -22,6 +22,7 @@
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [solution.py](easy/0104-maximum-depth-of-binary-tree/solution.py) | [筆記](easy/0104-maximum-depth-of-binary-tree/README.md) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [solution.py](easy/0121-best-time-to-buy-and-sell-stock/solution.py) | [筆記](easy/0121-best-time-to-buy-and-sell-stock/README.md) |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [solution.py](easy/0125-valid-palindrome/solution.py) | [筆記](easy/0125-valid-palindrome/README.md) |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [solution.py](easy/0141-linked-list-cycle/solution.py) | [筆記](easy/0141-linked-list-cycle/README.md) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [solution.py](easy/0217-contains-duplicate/solution.py) | [筆記](easy/0217-contains-duplicate/README.md) |
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [solution.py](easy/0232-implement-queue-using-stacks/solution.py) | [筆記](easy/0232-implement-queue-using-stacks/README.md) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [solution.py](easy/0242-valid-anagram/solution.py) | [筆記](easy/0242-valid-anagram/README.md) |
@@ -53,7 +54,7 @@
 
 ## 🎯 近期目標
 1. 挑戰更多 Medium 難度題目
-2. 練習樹的相關演算法
+2. 練習鏈表相關演算法
 3. 準備面試常見題型
 
 ---
