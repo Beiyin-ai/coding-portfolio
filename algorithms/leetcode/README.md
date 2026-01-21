@@ -1,17 +1,18 @@
 # 📚 LeetCode Solutions
 
 ## 📊 解題統計
-- **總題數：** 31 題
-- **難度分布：** Easy 24 題, Medium 7 題
+- **總題數：** 32 題
+- **難度分布：** Easy 25 題, Medium 7 題
 - **更新日期：** 2026-01-16
 
 ## 🗂️ 題目列表
 
-### Easy 題目（24題）
+### Easy 題目（25題）
 | # | Title | Solution | Notes |
 |---|-------|----------|-------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [solution.py](easy/0001-two-sum/solution.py) | [筆記](easy/0001-two-sum/README.md) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [solution.py](easy/0009-palindrome-number/solution.py) | [筆記](easy/0009-palindrome-number/README.md) |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [solution.py](easy/0013-roman-to-integer/solution.py) | [筆記](easy/0013-roman-to-integer/README.md) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [solution.py](easy/0014-longest-common-prefix/solution.py) | [筆記](easy/0014-longest-common-prefix/README.md) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [solution.py](easy/0020-valid-parentheses/solution.py) | [筆記](easy/0020-valid-parentheses/README.md) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [solution.py](easy/0026-remove-duplicates-from-sorted-array/solution.py) | [筆記](easy/0026-remove-duplicates-from-sorted-array/README.md) |
@@ -54,7 +55,7 @@
 
 ## 🎯 近期目標
 1. 挑戰更多 Medium 難度題目
-2. 練習鏈表相關演算法
+2. 練習各種數據結構的應用
 3. 準備面試常見題型
 
 ---
