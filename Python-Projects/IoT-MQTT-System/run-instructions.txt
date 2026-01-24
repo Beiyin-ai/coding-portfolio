@@ -1,0 +1,71 @@
+# IoT-MQTT 系統執行說明
+# 課程：物聯網通訊實務
+# 教師：謝燿聰老師
+# 學生：邱佩吟
+
+## 📋 系統概述
+本專案展示一個完整的 Docker 化 MQTT 訂閱者系統，包含：
+1. MQTT 訂閱者程式 (subscriber.py, tmp-sub.py)
+2. MQTT 發布者程式 (publisher.py)
+3. Docker 容器化配置 (Dockerfile, appRun.sh)
+
+## 🚀 快速開始
+
+### 方法一：使用 Python 直接執行
+```bash
+# 1. 安裝 Python 套件
+pip install -r requirements.txt
+
+# 2. 啟動 MQTT Broker (需要先安裝 mosquitto)
+# 或使用 Docker: docker run -d -p 1883:1883 eclipse-mosquitto
+
+# 3. 啟動訂閱者 (終端機 1)
+python subscriber.py
+
+# 4. 發布測試訊息 (終端機 2)
+python publisher.py
+# 或使用終端機命令:
+# mosquitto_pub -h 127.0.0.1 -p 1883 -t aiot-113/n26/h-t -m "69.1 31.1"
+```
+
+### 方法二：使用 Docker 容器化執行
+```bash
+# 1. 建置 Docker 映像檔
+docker build -t iot_mqtt:112 .
+
+# 2. 執行容器
+docker run -d \
+    --name iot_mqtt \
+    --restart unless-stopped \
+    -v $(pwd):/x \
+    -v ~/log_mqtt:/xlog_mqtt \
+    iot_mqtt:112
+
+# 3. 查看容器狀態
+docker ps
+docker logs iot_mqtt
+```
+
+### 方法三：終端機直接測試
+```bash
+# 訂閱主題 (終端機 1)
+mosquitto_sub -h 127.0.0.1 -p 1883 -t aiot-113/n26/h-t
+
+# 發布訊息 (終端機 2)
+mosquitto_pub -h 127.0.0.1 -p 1883 -t aiot-113/n26/h-t -m "69.1 31.1"
+```
+
+## 📊 測試結果驗證
+1. 訂閱者終端機會顯示收到的訊息
+2. 進階版本 (tmp-sub.py) 會將數據發送到 HTTP 伺服器
+3. Docker 容器會記錄日誌到 ~/log_mqtt 目錄
+
+## 🔧 常見問題
+### Q1: Connection refused 錯誤
+A: 確保 MQTT Broker 正在執行
+
+### Q2: ModuleNotFoundError: No module named 'paho'
+A: 執行 `pip install -r requirements.txt`
+
+### Q3: Docker build 失敗
+A: 確保有 iot_data:112 基礎映像檔，或修改 Dockerfile

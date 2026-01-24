@@ -1,0 +1,7 @@
+# IoT-MQTT 系統所需套件
+# 課程：物聯網通訊實務 - 謝燿聰老師
+
+paho-mqtt==1.6.1
+requests==2.31.0
+
+# Dockerfile 中會安裝這些套件
