@@ -23,6 +23,7 @@
 | 121 | [best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [solution.py](0121-best-time-to-buy-and-sell-stock/solution.py) | [筆記](0121-best-time-to-buy-and-sell-stock/README.md) |
 | 125 | [valid palindrome](https://leetcode.com/problems/valid-palindrome/) | [solution.py](0125-valid-palindrome/solution.py) | [筆記](0125-valid-palindrome/README.md) |
 | 141 | [linked list cycle](https://leetcode.com/problems/linked-list-cycle/) | [solution.py](0141-linked-list-cycle/solution.py) | [筆記](0141-linked-list-cycle/README.md) |
+| 168 | [excel sheet column title](https://leetcode.com/problems/excel-sheet-column-title/) | [solution.py](0168-excel-sheet-column-title/solution.py) | [筆記](0168-excel-sheet-column-title/README.md) |
 | 217 | [contains duplicate](https://leetcode.com/problems/contains-duplicate/) | [solution.py](0217-contains-duplicate/solution.py) | [筆記](0217-contains-duplicate/README.md) |
 | 232 | [implement queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [solution.py](0232-implement-queue-using-stacks/solution.py) | [筆記](0232-implement-queue-using-stacks/README.md) |
 | 242 | [valid anagram](https://leetcode.com/problems/valid-anagram/) | [solution.py](0242-valid-anagram/solution.py) | [筆記](0242-valid-anagram/README.md) |
@@ -50,9 +51,9 @@
 3. 準備面試常見題型
 
 ## 🏆 最近完成
+- ✅ 168. Excel Sheet Column Title (Easy) - 數學、字串、進位制轉換
 - ✅ 1528. Shuffle String (Easy) - 數組操作、字串處理
 - ✅ 1108. Defanging an IP Address (Easy) - 字串處理
-- ✅ 2469. Convert the Temperature (Easy) - 數學計算
 
 ---
 *持續學習，每日進步*
