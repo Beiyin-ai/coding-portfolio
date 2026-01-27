@@ -1,0 +1,16 @@
+# MicroPython 專案依賴
+# 多數模組已內建在 MicroPython 韌體中
+
+# 可能需要手動安裝的庫：
+# 使用 upip 安裝 (需要網路):
+# import upip
+# upip.install('micropython-umqtt.simple')
+
+# 標準庫 (通常已內建):
+# - ssd1306
+# - dht
+# - umqtt.simple
+# - ntptime
+
+# 專案自定義模組:
+# - 放置於 lib/ 資料夾

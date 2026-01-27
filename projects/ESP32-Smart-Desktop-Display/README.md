@@ -2,210 +2,204 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: ESP32](https://img.shields.io/badge/Platform-ESP32-green.svg)](https://www.espressif.com/)
-[![Framework: Arduino](https://img.shields.io/badge/Framework-Arduino-blue.svg)](https://www.arduino.cc/)
+[![Framework: MicroPython](https://img.shields.io/badge/Framework-MicroPython-blue.svg)](https://micropython.org/)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 
 ## 📋 專案概述 / Project Overview
 
-這是一個物聯網學習專案，整合多種感測器和顯示技術，建立一個智能桌面顯示裝置。專案作為 ESP32 開發、感測器整合和使用者介面設計的練習。
+這是一個基於 MicroPython 的物聯網桌面顯示器，整合多種感測器和顯示技術，建立一個智能桌面顯示裝置。專案展示 ESP32 Type-C 開發板的實際應用。
 
-This is a practice IoT project that integrates multiple sensors and display technologies to create a smart desktop display device. The project serves as a learning exercise for ESP32 development, sensor integration, and user interface design.
+This is a MicroPython-based IoT desktop display that integrates multiple sensors and display technologies to create a smart desktop display device. The project demonstrates practical applications of ESP32 Type-C development board.
 
-## 🎯 學習目標 / Learning Objectives
-- **ESP32 微控制器程式設計** / ESP32 microcontroller programming
-- **多感測器整合** / Multiple sensor integration (DHT22, OLED, WS2812B)
-- **OLED 顯示介面設計** / User interface design with OLED display
-- **按鈕互動與狀態管理** / Button interaction and state management
-- **物聯網系統架構** / IoT system architecture
+## ✨ 主要功能 / Features
 
-## 📸 專案展示 / Project Demo
+### 🖥️ 三種顯示模式
+1. **日期與環境模式** - 顯示時間、日期、溫濕度
+2. **訊息顯示模式** - 顯示 MQTT 接收的訊息
+3. **倒數日期模式** - 顯示重要日子的倒數
 
-*(請在 docs/images/ 資料夾中放置展示圖片或 GIF)*
-*(Please place demo images or GIFs in docs/images/ folder)*
+### 📡 無線通訊
+- **WiFi 連接** - 自動連接無線網路
+- **NTP 校時** - 自動同步網路時間
+- **MQTT 訂閱** - 接收遠端訊息
+- **時區支援** - 自動調整為台灣時間 (UTC+8)
 
-## 🛠 硬體元件 / Hardware Components
-| 元件 / Component | 規格 / Specification | 數量 / Qty |
-|-----------------|---------------------|------------|
-| ESP32 開發板 | ESP32-WROOM-32 | 1 |
-| OLED 顯示器 | 0.96" I2C SSD1306 | 1 |
-| 溫濕度感測器 | DHT22 | 1 |
-| RGB LED | WS2812B | 1 |
-| 按鈕開關 | 輕觸開關 | 1 |
-| 麵包板與杜邦線 | Breadboard & jumper wires | 1套 |
+### 🎮 使用者互動
+- **按鈕控制** - 切換顯示模式
+- **自動返回** - 10秒後自動返回主畫面
+- **特殊日期動畫** - 生日/紀念日閃爍效果
+- **跑馬燈顯示** - 重要訊息跑馬燈效果
 
-## 🔌 電路接線 / Wiring Diagram
-詳細接線說明請見：[接線指南](docs/wiring_guide.md) / See [Wiring Guide](docs/wiring_guide.md) for detailed connection instructions.
+## 🛠️ 技術規格 / Technical Specifications
 
-基本接線 / Basic Wiring:
-ESP32 3.3V → OLED VCC, DHT22 VCC, WS2812B VDD
-ESP32 GND → OLED GND, DHT22 GND, WS2812B VSS, Button
-ESP32 GPIO21 → OLED SDA
-ESP32 GPIO22 → OLED SCL
-ESP32 GPIO4 → DHT22 DATA
-ESP32 GPIO13 → WS2812B DIN
-ESP32 GPIO15 → Button (內部上拉電阻 / with internal pull-up)
+### 硬體 / Hardware
+- **微控制器**: ESP32-WROOM-32 (Type-C 接口)
+- **顯示器**: SSD1306 OLED 0.96" (128x64, I2C)
+- **感測器**: DHT22 溫濕度感測器
+- **輸入裝置**: 輕觸按鈕開關
+- **通訊**: WiFi 802.11 b/g/n
 
-## 💻 軟體功能 / Software Features
+### 軟體 / Software
+- **框架**: MicroPython 1.21.0
+- **開發環境**: Thonny IDE / VS Code
+- **主要函式庫**: 
+  - `ssd1306` - OLED 顯示驅動
+  - `dht` - 溫濕度感測器驅動
+  - `umqtt.simple` - MQTT 通訊
+  - `ntptime` - 網路時間同步
 
-### 四種顯示模式 / Four Display Modes
-1. **正常模式 / Normal Mode**：顯示日期、時間、溫濕度
-2. **倒數模式 / Counter Mode**：大字顯示目標倒數
-3. **訊息模式 / Message Mode**：輪播預設文字訊息
-4. **特別模式 / Special Mode**：動畫顯示與彩虹LED效果
+## 🚀 快速開始 / Quick Start
 
-### 互動控制 / Interactive Controls
-- **短按按鈕 / Short press**：循環切換顯示模式
-- **長按2秒 / Long press (2s)**：觸發特別動畫
-- **自動輪播 / Automatic rotation**：訊息自動定時更換
-
-## 🚀 快速開始 / Getting Started
-
-### 環境需求 / Prerequisites
-- PlatformIO 或 Arduino IDE
-- ESP32 開發板支援
-- 必要函式庫 / Required libraries:
-  ```bash
-  # PlatformIO 會自動安裝 / PlatformIO will install automatically
-  - U8g2 (OLED顯示)
-  - DHT sensor library (溫濕度感測)
-  - FastLED (RGB LED控制)
-安裝步驟 / Installation Steps
-# 複製專案 / Clone the project
-git clone <repository-url>
-cd ESP32-Smart-Desktop-Display
-
-# 編譯與上傳 / Build and upload
-cd firmware
-pio run --target upload
-
-# 監控序列埠 / Monitor serial output
-pio device monitor
-設定檔修改 / Configuration
-編輯 firmware/src/config.h 可客製化：
-
-顯示訊息內容 / Display messages
-
-LED 顏色設定 / LED colors
-
-更新時間間隔 / Update intervals
-
-目標日期設定 / Target date settings
-
-📂 專案結構 / Project Structure
-ESP32-Smart-Desktop-Display/
-├── firmware/           # 韌體程式碼
-│   ├── src/           # 原始碼
-│   └── platformio.ini # PlatformIO 設定
-├── docs/              # 文件
-│   ├── wiring_guide.md
-│   └── setup_guide.md
-├── hardware/          # 硬體設計
-│   ├── BOM.md
-│   └── schematic/
-├── examples/          # 範例程式
-└── simulations/       # 模擬測試
-📝 程式碼範例 / Code Example
-// 設定檔範例 / Configuration example
-#define OLED_SDA_PIN 21
-#define OLED_SCL_PIN 22
-#define DHT_PIN 4
-#define LED_PIN 13
-#define BUTTON_PIN 15
-
-const char* MARQUEE_MESSAGES[] = {
-  "Birthday in 9 days",
-  "IoT Learning Project",
-  "ESP32 + OLED + DHT22",
-  "Smart Desktop Display"
-};
-🤝 貢獻指南 / Contributing
-歡迎提交 Issue 或 Pull Request！
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-📄 授權條款 / License
-本專案採用 MIT 授權 - 詳見 LICENSE 檔案
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-📧 聯絡資訊 / Contact
-GitHub: @Beiyin-ai
-
-專案連結: ESP32-Smart-Desktop-Display
-
-## 🔧 安裝與設定
-# Setup Guide
-
-## Prerequisites
-- Arduino IDE or PlatformIO
-- ESP32 Board Support
-- Required Libraries:
-  - U8g2 (for OLED)
-  - DHT sensor library
-  - FastLED
-
-## Installation Steps
-
-### 1. Install PlatformIO
+### 1. 準備硬體
 ```bash
-# Install PlatformIO Core
-python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
-2. Clone the Project
-bash
-git clone <repository-url>
-cd ESP32-Smart-Desktop-Display
-3. Build and Upload
-bash
-cd firmware
-pio run --target upload
-4. Monitor Serial Output
-bash
-pio device monitor
-Configuration
-Edit firmware/src/config.h to customize:
+# 參考接線指南
+/docs/wiring_guide.md
+```
 
-Display messages
+### 2. 安裝開發環境
+```bash
+# 安裝必要工具
+pip install esptool adafruit-ampy
 
-LED colors
+# 或使用 Thonny IDE
+# 下載: https://thonny.org
+```
 
-Update intervals
+### 3. 燒錄 MicroPython
+```bash
+# 使用工具腳本
+cd tools
+./flash_micropython.sh /dev/ttyUSB0
+```
 
-Animation parameters
+### 4. 上傳程式
+```bash
+# 上傳所有檔案
+cd tools
+./upload_files.sh /dev/ttyUSB0
+```
 
-## 💻 使用範例
-# 基本使用範例
+## 📁 專案結構 / Project Structure
+```
+ESP32-Smart-Desktop-Display/
+├── README.md                    # 說明文件
+├── LICENSE                      # MIT 授權
+├── firmware/                    # MicroPython 程式碼
+│   ├── main.py                 # 主程式
+│   ├── boot.py                 # 啟動設定
+│   ├── requirements.txt        # 依賴列表
+│   └── lib/                    # 自定義函式庫
+├── docs/                       # 文件
+│   ├── wiring_guide.md        # 接線指南
+│   ├── micropython_setup.md   # 環境設定
+│   ├── BOM.md                 # 材料清單
+│   └── images/                # 圖片目錄
+└── tools/                      # 工具腳本
+    ├── flash_micropython.sh   # 韌體燒錄
+    └── upload_files.sh        # 檔案上傳
+```
 
-這個範例展示如何初始化和使用 ESP32 智能桌面顯示器的主要功能。
+## 🔧 設定說明 / Configuration
 
-## 初始化程式碼
+### WiFi 設定
+編輯 `firmware/main.py`：
+```python
+ssid = "Your_WiFi_SSID"
+password = "Your_WiFi_Password"
+```
 
-```cpp
-#include <Arduino.h>
-#include "config.h"
-#include "led.h"
-#include "button.h"
+### MQTT 設定
+```python
+mqtt_server = "test.mosquitto.org"  # 公共 MQTT 伺服器
+topic_sub = b"your/topic"           # 訂閱主題
+```
 
-LED ledControl;
-Button button;
-
-void setup() {
-  Serial.begin(115200);
-  ledControl.init();
-  button.init();
-  
-  Serial.println("System initialized");
-}
-
-void loop() {
-  button.update();
-  
-  if (button.wasPressed()) {
-    if (button.isLongPress()) {
-      Serial.println("Long press detected!");
-      ledControl.playAnimation();
-    } else {
-      Serial.println("Short press detected!");
-      ledControl.setColor(255, 0, 0); // Red
-    }
-  }
-  
-  delay(10);
+### 特殊日期設定
+```python
+special_dates = {
+    "0113": "Happy Birthday!",      # 1月13日
+    "0716": "My Birthday!",         # 7月16日
+    "0515": "Anniversary!"          # 5月15日
 }
 ```
+
+## 📸 使用示範 / Usage Demo
+
+### 基本操作
+1. **上電啟動** - 自動連接 WiFi 並同步時間
+2. **按鈕操作** - 短按切換顯示模式
+3. **自動功能** - 10秒後返回主畫面
+
+### MQTT 測試
+```bash
+# 發送測試訊息
+mosquitto_pub -h test.mosquitto.org -t "pei/oled" -m "Hello ESP32!"
+```
+
+## 🐛 疑難排解 / Troubleshooting
+
+| 問題 | 解決方法 |
+|------|----------|
+| 無法連接 WiFi | 檢查 SSID/密碼，確認訊號強度 |
+| OLED 無顯示 | 檢查 I2C 接線，確認地址 0x3C |
+| DHT22 讀取失敗 | 檢查接線，添加 10kΩ 上拉電阻 |
+| 時間不同步 | 確認網路連接，檢查 NTP 伺服器 |
+| MQTT 無法接收 | 檢查網路，確認訂閱主題正確 |
+
+## 📄 授權條款 / License
+本專案採用 MIT 授權 - 詳見 [LICENSE](LICENSE) 檔案
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📧 聯絡資訊 / Contact
+- GitHub: [@Beiyin-ai](https://github.com/Beiyin-ai)
+- 專案連結: [ESP32-Smart-Desktop-Display](https://github.com/Beiyin-ai/coding-portfolio/tree/main/projects/ESP32-Smart-Desktop-Display)
+
+## 🙏 致謝 / Acknowledgments
+- MicroPython 開發團隊
+- ESP32 硬體設計
+- 開源社群貢獻者
+
+---
+**讓你的桌面變得更智能！** 🚀
+
+## 💡 經驗分享 / Lessons Learned
+
+在開發過程中，我們遇到並解決了以下常見問題，這些經驗對 ESP32 和 MicroPython 新手特別有幫助：
+
+### 🪜 常見問題與解決方案
+
+| 問題 | 原因分析 | 解決方案 |
+|------|----------|----------|
+| **畫面切換邏輯錯誤** | 使用 `screen_mode = 1 - screen_mode` 只能在兩頁間切換 | 改為 `screen_mode = (screen_mode + 1) % 3` 實現三頁循環 |
+| **第三頁卡住無回應** | 跑馬燈迴圈中未檢查按鈕輸入，程式卡在迴圈內 | 添加自動返回計時器：10秒後自動返回第一頁 |
+| **時間顯示錯誤 (1970年)** | ESP32 沒有 RTC 電池，開機後時間重置 | 整合 NTP 校時：WiFi 連接後自動同步網路時間並調整時區 (+8) |
+| **倒數日顯示過去事件** | 顯示 "passed" 或負數天數造成畫面混亂 | 只顯示未來事件，過去事件僅顯示日期 |
+| **字體行距不一致** | 不同頁面使用不同行距 (20px vs 16px) | 統一使用 16px 行距，保持版面一致性 |
+| **DHT22 讀取失敗** | 缺少上拉電阻或讀取間隔太短 | 添加 10kΩ 上拉電阻，增加讀取間隔時間 |
+| **OLED 顯示亂碼** | I2C 通訊不穩定或地址錯誤 | 確認 I2C 地址 (0x3C)，檢查接線品質 |
+| **按鈕抖動誤觸** | 機械開關接觸時產生抖動信號 | 添加軟體去抖動 (debounce) 延遲 50ms |
+
+### 🎯 開發心得
+
+1. **ESP32 時間管理**
+   - ESP32 沒有硬體 RTC，必須依賴網路校時
+   - 開機後優先連接 WiFi 並同步 NTP 時間
+   - 台灣時區需手動調整 (+8 小時)
+
+2. **使用者體驗設計**
+   - 按鈕操作要有即時視覺回饋
+   - 避免使用者卡在任何畫面 (添加自動返回)
+   - 保持介面一致性 (字體、行距、佈局)
+
+3. **錯誤處理與穩定性**
+   - 所有感測器讀取都要有 try-except 保護
+   - 網路操作要有重試機制
+   - 顯示緩衝區更新前先清除
+
+4. **硬體注意事項**
+   - DHT22 需要 10kΩ 上拉電阻
+   - OLED I2C 接線要短且穩固
+   - ESP32 的 3.3V 供電要充足
+
+這些經驗來自實際開發過程中的挑戰與解決方案，希望能幫助其他開發者避免類似問題。
