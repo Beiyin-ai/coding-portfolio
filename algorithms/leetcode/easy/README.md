@@ -32,6 +32,7 @@
 | 387 | [first unique character in a string](https://leetcode.com/problems/first-unique-character-in-a-string/) | [solution.py](0387-first-unique-character-in-a-string/solution.py) | [筆記](0387-first-unique-character-in-a-string/README.md) |
 | 412 | [fizz buzz](https://leetcode.com/problems/fizz-buzz/) | [solution.py](0412-fizz-buzz/solution.py) | [筆記](0412-fizz-buzz/README.md) |
 | 643 | [maximum average subarray i](https://leetcode.com/problems/maximum-average-subarray-i/) | [solution.py](0643-maximum-average-subarray-i/solution.py) | [筆記](0643-maximum-average-subarray-i/README.md) |
+| 682 | [baseball game](https://leetcode.com/problems/baseball-game/) | [solution.py](0682-baseball-game/solution.py) | [筆記](0682-baseball-game/README.md) |
 | 1108 | [defanging an ip address](https://leetcode.com/problems/defanging-an-ip-address/) | [solution.py](1108-defanging-an-ip-address/solution.py) | [筆記](1108-defanging-an-ip-address/README.md) |
 | 1480 | [running sum of 1d array](https://leetcode.com/problems/running-sum-of-1d-array/) | [solution.py](1480-running-sum-of-1d-array/solution.py) | [筆記](1480-running-sum-of-1d-array/README.md) |
 | 1528 | [shuffle string](https://leetcode.com/problems/shuffle-string/) | [solution.py](1528-shuffle-string/solution.py) | [筆記](1528-shuffle-string/README.md) |
@@ -51,9 +52,9 @@
 3. 準備面試常見題型
 
 ## 🏆 最近完成
+- ✅ 682. Baseball Game (Easy) - 數組操作、模擬、棧應用
 - ✅ 168. Excel Sheet Column Title (Easy) - 數學、字串、進位制轉換
 - ✅ 1528. Shuffle String (Easy) - 數組操作、字串處理
-- ✅ 1108. Defanging an IP Address (Easy) - 字串處理
 
 ---
 *持續學習，每日進步*
