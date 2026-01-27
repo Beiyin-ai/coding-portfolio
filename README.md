@@ -1,5 +1,5 @@
 # 👋 邱佩吟 | Chiu Pei-Yin
-### Aspiring Full-Stack Developer with a Security Mindset | 具備安全意識的全端開發學習者
+### Aspiring Full-Stack Developer with a Security Mindset | 具備安全意識的全端開發者
 
 **🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 
 
