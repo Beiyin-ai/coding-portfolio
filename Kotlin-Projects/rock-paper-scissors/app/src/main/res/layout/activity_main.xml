@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 標題 -->
+    <TextView
+        android:id="@+id/tvTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="輪到玩家喊：請選擇喊的數字"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 喊的人 -->
+    <TextView
+        android:id="@+id/tvCaller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="喊的人：___"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTurn" />
+
+    <!-- 玩家出拳標題 -->
+    <TextView
+        android:id="@+id/tvPlayerFist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="玩家出拳(0/5/10)"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaller" />
+
+    <!-- 要出的數字選項 -->
+    <TextView
+        android:id="@+id/tvChooseNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="要出的數字選項："
+        app:layout_constraintStart_toStartOf="@+id/tvPlayerFist"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerFist" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tvChooseNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvChooseNumber">
+
+        <RadioButton
+            android:id="@+id/btnNumber0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="0" />
+
+        <RadioButton
+            android:id="@+id/btnNumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/btnNumber10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+    </RadioGroup>
+
+    <!-- 玩家要喊的數字標題 -->
+    <TextView
+        android:id="@+id/tvPlayerCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="玩家要喊的數字："
+        app:layout_constraintStart_toStartOf="@+id/radioGroupNumber"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupNumber" />
+
+    <!-- 喊的數字選擇 -->
+    <RadioGroup
+        android:id="@+id/radioGroupCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tvPlayerCall"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerCall">
+
+        <RadioButton
+            android:id="@+id/btnCall0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <RadioButton
+            android:id="@+id/btnCall5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/btnCall10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/btnCall15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15" />
+
+        <RadioButton
+            android:id="@+id/btnCall20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20" />
+    </RadioGroup>
+
+    <!-- 按鈕區域 -->
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="出拳"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupCall" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="重新開始"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAction" />
+
+    <!-- 分隔線 -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestart" />
+
+    <!-- 結果區域 -->
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="本局結果"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <!-- 玩家出拳結果 -->
+    <TextView
+        android:id="@+id/tvPlayerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="玩家出拳："
+        app:layout_constraintStart_toStartOf="@+id/tvResultTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultTitle" />
+
+    <!-- 電腦出拳結果 -->
+    <TextView
+        android:id="@+id/tvComputerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="電腦出拳："
+        app:layout_constraintStart_toStartOf="@+id/tvPlayerResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerResult" />
+
+    <!-- 本回合喊 -->
+    <TextView
+        android:id="@+id/tvCallResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="本回合喊："
+        app:layout_constraintStart_toStartOf="@+id/tvComputerResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvComputerResult" />
+
+    <!-- 總和 -->
+    <TextView
+        android:id="@+id/tvTotalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="總和："
+        app:layout_constraintStart_toStartOf="@+id/tvCallResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvCallResult" />
+
+    <!-- 最終結果 -->
+    <TextView
+        android:id="@+id/tvFinalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="結果："
+        app:layout_constraintStart_toStartOf="@+id/tvTotalResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalResult" />
+
+    <!-- 比分顯示 -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="比分：玩家 0 - 0 電腦"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvFinalResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvFinalResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
