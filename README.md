@@ -1,7 +1,7 @@
 # 👋 邱佩吟 | Chiu Pei-Yin
 ### Aspiring Full-Stack Developer with a Security Mindset | 具備安全意識的全端開發學習者
 
-**🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 Targeting Delta Electronics | 目標鎖定台達電子**
+**🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 
 
 > From a background in linguistics and international trade, I successfully transitioned into tech with proven learning ability — **earning the ITS Python International Certification (passed Jan 8, 2025) from scratch within 2 months**. Currently building full-stack skills (Python, JavaScript, Docker) through systematic training, aiming to contribute to product security development.
 >
