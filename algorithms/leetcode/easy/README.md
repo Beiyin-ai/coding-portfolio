@@ -14,6 +14,7 @@
 | 13 | [roman to integer](https://leetcode.com/problems/roman-to-integer/) | [solution.py](0013-roman-to-integer/solution.py) | [筆記](0013-roman-to-integer/README.md) |
 | 14 | [longest common prefix](https://leetcode.com/problems/longest-common-prefix/) | [solution.py](0014-longest-common-prefix/solution.py) | [筆記](0014-longest-common-prefix/README.md) |
 | 20 | [valid parentheses](https://leetcode.com/problems/valid-parentheses/) | [solution.py](0020-valid-parentheses/solution.py) | [筆記](0020-valid-parentheses/README.md) |
+| 21 | [merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [solution.py](0021-merge-two-sorted-lists/solution.py) | [筆記](0021-merge-two-sorted-lists/README.md) |
 | 26 | [remove duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [solution.py](0026-remove-duplicates-from-sorted-array/solution.py) | [筆記](0026-remove-duplicates-from-sorted-array/README.md) |
 | 67 | [add binary](https://leetcode.com/problems/add-binary/) | [solution.py](0067-add-binary/solution.py) | [筆記](0067-add-binary/README.md) |
 | 88 | [merge sorted array](https://leetcode.com/problems/merge-sorted-array/) | [solution.py](0088-merge-sorted-array/solution.py) | [筆記](0088-merge-sorted-array/README.md) |
@@ -52,9 +53,9 @@
 3. 準備面試常見題型
 
 ## 🏆 最近完成
+- ✅ 21. Merge Two Sorted Lists (Easy) - 鏈表操作、虛擬頭節點技巧
 - ✅ 682. Baseball Game (Easy) - 數組操作、模擬、棧應用
 - ✅ 168. Excel Sheet Column Title (Easy) - 數學、字串、進位制轉換
-- ✅ 1528. Shuffle String (Easy) - 數組操作、字串處理
 
 ---
 *持續學習，每日進步*
