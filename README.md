@@ -14,7 +14,8 @@
 | Strength | Evidence |
 |----------|----------|
 | **🚀 快速學習與執行** | ITS Python 認證 (2個月內從零考取) • 系統化學習泰山職訓AI/全端課程 |
-| **🧠 紮實的邏輯與問題解決** | 29+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
+| **🧠 紮實的邏輯與問題解決** | 32+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
+| **☁️ 雲端部署與實戰能力** | AWS EC2 完整部署實戰 • LAMP + MQTT 服務架設 |
 | **🛡️ 產品安全意識與興趣** | 主動將安全思維納入學習目標 • 對台達資安團隊的使命深感認同 |
 | **🌍 溝通與跨領域協作** | 多語言能力 (TOEIC 795, DELE B1) • 社團領導與跨國實習經驗 |
 
@@ -22,12 +23,21 @@
 
 ## 🛠️ Technical Skills | 技術技能
 
+### Cloud & DevOps | 雲端與開發維運
+![AWS](https://img.shields.io/badge/AWS-EC2_實戰部署-orange?logo=amazonaws)
+![Linux](https://img.shields.io/badge/Linux-伺服器配置-black?logo=linux)
+![Docker](https://img.shields.io/badge/Docker-Learning-blue?logo=docker)
+![Git](https://img.shields.io/badge/Git-Expert-orange?logo=git)
+- **Cloud**: AWS EC2 實戰部署 (LAMP + MQTT) • 安全群組設定 • 固定 IP 配置
+- **DevOps**: Linux 系統管理 • Bash 自動化腳本 • Docker 容器化
+- **Version Control**: Git, GitHub/GitLab, Git Flow
+
 ### Backend | 後端
-![Python](https://img.shields.io/badge/Python-Intermediate-blue?logo=python)
-![Algorithms](https://img.shields.io/badge/Algorithms-25+_LeetCode-green)
-- **Python**: ITS 專業認證 (已取得) | 29+ LeetCode 題解| 25+ LeetCode 題解| 29+ LeetCode 題解 (數據結構與演算法)
-- **Web 基礎**: 理解 HTTP 與前後端溝通概念
-- **下一步學習**: Web 框架與 API 設計
+![Python](https://img.shields.io/badge/Python-ITS認證-blue?logo=python)
+![Algorithms](https://img.shields.io/badge/Algorithms-32+_LeetCode-green)
+- **Python**: ITS 專業認證 (已取得) | 32+ LeetCode 題解 (Easy 25 / Medium 7)
+- **Web 服務**: Apache • MySQL • PHP • MQTT (Mosquitto)
+- **數據庫**: MySQL 設定與管理 • 使用者權限配置
 
 ### Frontend | 前端
 ![JavaScript](https://img.shields.io/badge/JavaScript-Intermediate-yellow?logo=javascript)
@@ -36,28 +46,36 @@
 - **Core**: HTML5, CSS3, JavaScript (ES6+)
 - **Framework**: 課程中學習 Vue.js/ReactJS 基礎
 
-### DevOps & Tools | 開發維運與工具
-![Git](https://img.shields.io/badge/Git-Expert-orange?logo=git)
-![Docker](https://img.shields.io/badge/Docker-Learning-blue?logo=docker)
-![Linux](https://img.shields.io/badge/Linux-Intermediate-black?logo=linux)
-- **Version Control**: Git, GitHub/GitLab, Git Flow
-- **Containerization**: Docker (課程實作經驗)
-- **Environment**: Linux 命令列操作與基本維運
-
 ---
 
 ## 📂 Featured Projects | 精選項目
 
-### 🔗 [Algorithmic Problem-Solving Repository](algorithms/)
-**26+ LeetCode Solutions (19 Easy, 7 Medium) | 25+ LeetCode題解 (18簡單, 7中等)**
-- **Tech**: Python
-- **Highlights**: 每題包含**思路分析、時間/空間複雜度、多重解法比較**。系統化建立解題思維模型。
-- **Skills Demonstrated**: 數據結構、演算法、系統化思考、文檔撰寫。
+### 🥇 [AWS Cloud Deployment Guide](Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup/)
+**☁️ AWS EC2 完整部署實戰 | 362行詳細教學 | 一鍵自動化腳本**
+- **Tech Stack**: AWS EC2 • Ubuntu 24.04 • Apache • MySQL • PHP • Mosquitto MQTT
+- **專案亮點**:
+  - 📚 **完整教學文件**: 362行詳細步驟，從註冊到部署完整流程
+  - ⚡ **自動化腳本**: 一鍵安裝 LAMP、MQTT、安全設定
+  - 🔧 **實用範例**: MQTT Pub/Sub 程式、設定檔模板、疑難排解
+  - 🛡️ **安全實務**: 安全群組設定、防火牆配置、權限管理
+- **展示能力**: 雲端服務部署 • 伺服器配置 • 自動化維運 • 技術文檔撰寫
 
-### 📚 [Learning Journey & Notes](learning/)
-**公開的學習筆記庫 | Public Learning Notes**
-- 記錄從 Python 基礎到全端開發的學習軌跡。
-- 體現**持續學習、知識梳理與分享**的工程師習慣。
+### 🥈 [Algorithmic Problem-Solving Repository](algorithms/)
+**🏆 32+ LeetCode Solutions (25 Easy, 7 Medium) | 系統化解題思維**
+- **Tech**: Python
+- **專案亮點**:
+  - 🧠 **每題完整分析**: 思路、時間/空間複雜度、多重解法比較
+  - 📊 **分類整理**: Easy (25題) / Medium (7題) 清晰分類
+  - 🔍 **測試案例**: 部分題目包含測試腳本
+- **展示能力**: 數據結構 • 演算法 • 系統化思考 • 問題解決能力
+
+### 🥉 [IoT & Python Projects](Python-Projects/)
+**🤖 物聯網系統實作 | 手勢控制 | 數據監控**
+- **專案包含**:
+  - `IoT-MQTT-System`: Docker 化 MQTT 系統
+  - `Hand-Gesture-ESP32-Light-Control`: ESP32 手勢控制
+  - `Taiwan-Reservoir-Monitoring-System`: 水庫數據監控
+- **展示能力**: 物聯網開發 • 硬體整合 • 數據處理 • Docker 容器化
 
 ---
 
@@ -65,11 +83,12 @@
 
 我深入研究職缺描述，我的學習路徑與團隊需求高度重合：
 
-1.  **核心基礎紮實**：具備 Python 程式邏輯、數據結構與演算法能力，這是學習任何框架的堅實基礎。
-2.  **技術棧對齊中**：正系統化學習職缺所需的前端(Vue.js/React)與開發工具(Docker, Git, Linux)。
-3.  **安全意識與熱情**：對「產品資安解決方案」充滿好奇與熱情，渴望在實戰中學習並貢獻。
-4.  **成長型心態**：強大的學習引擎與務實態度，能快速融入團隊的技術文化並分擔基礎開發任務。
-5.  **協作與溝通**：過往經驗證明我能有效進行團隊協作與跨領域溝通，確保專案順利推進。
+1.  **☁️ 雲端實戰經驗**: 具備 AWS EC2 完整部署經驗，能快速上手雲端環境與維運工作。
+2.  **🛡️ 安全意識與熱情**: 對「產品資安解決方案」充滿好奇與熱情，渴望在實戰中學習並貢獻。
+3.  **🧠 核心基礎紮實**: 32+ LeetCode 題解證明邏輯與演算法能力，這是學習任何技術的堅實基礎。
+4.  **🚀 成長型心態**: 強大的學習引擎與務實態度，能快速融入團隊的技術文化並分擔開發任務。
+5.  **🤝 協作與溝通**: 過往經驗證明我能有效進行團隊協作與跨領域溝通，確保專案順利推進。
+6.  **📚 文檔與分享**: 重視技術文檔撰寫與知識分享，建立完整的部署指南展示系統化思維。
 
 ---
 
@@ -83,13 +102,15 @@
 ### 🌐 線上履歷與作品集 | Online Resume & Portfolio
 - **GitHub:** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
 - **作品集專案:** [coding-portfolio](https://github.com/Beiyin-ai/coding-portfolio)
+- **雲端部署專案:** [AWS LAMP + MQTT Guide](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup)
 
 ### 📄 證照與能力 | Certifications & Qualifications
 - **語言能力:** TOEIC 795 (English) | DELE B1 (Spanish)
 - **專業認證:** ITS Python International Certification (2025)
+- **雲端技能:** AWS EC2 實戰部署經驗
 - **其他證照:** 國貿技術士丙級證照
 
 ---
 
-> *"從解一道題到建一個系統，我正走在成為可靠工程師的路上。"*
-> *"From solving one problem to building a system, I am on the path to becoming a reliable engineer."*
+> *"從解一道題到部署一個雲端服務，我正走在成為可靠工程師的路上。"*
+> *"From solving one problem to deploying a cloud service, I am on the path to becoming a reliable engineer."*
