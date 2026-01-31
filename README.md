@@ -1,116 +1,101 @@
 # 👋 邱佩吟 | Chiu Pei-Yin
-### Aspiring Full-Stack Developer with a Security Mindset | 具備安全意識的全端開發者
+### 轉職工程師 | 雲端 × 全端 | 快速學習 × 實戰導向
 
-**🚀 Fast-Track Learner | 高效學習者** | **🛡️ Passionate about Product Security | 熱衷產品安全** | **🎯 
-
-> From a background in linguistics and international trade, I successfully transitioned into tech with proven learning ability — **earning the ITS Python International Certification (passed Jan 8, 2025) from scratch within 2 months**. Currently building full-stack skills (Python, JavaScript, Docker) through systematic training, aiming to contribute to product security development.
->
-> 從外語與國際貿易背景成功轉型，憑藉強大的學習力，在**兩個月內從零基礎考取 ITS Python 國際證照 (2025年1月8日通過)**。現正透過系統化課程建構全端技能，目標成為能為產品安全團隊貢獻的工程師。
-
----
-
-## 🏆 Core Strengths | 核心優勢
-
-| Strength | Evidence |
-|----------|----------|
-| **🚀 快速學習與執行** | ITS Python 認證 (2個月內從零考取) • 系統化學習泰山職訓AI/全端課程 |
-| **🧠 紮實的邏輯與問題解決** | 32+ LeetCode 題解與完整分析 • 從演算法培養的系統化思維 |
-| **☁️ 雲端部署與實戰能力** | AWS EC2 完整部署實戰 • LAMP + MQTT 服務架設 |
-| **🛡️ 產品安全意識與興趣** | 主動將安全思維納入學習目標 • 對台達資安團隊的使命深感認同 |
-| **🌍 溝通與跨領域協作** | 多語言能力 (TOEIC 795, DELE B1) • 社團領導與跨國實習經驗 |
+> 從外語與國際貿易背景成功轉型，證明我擁有強大的學習引擎。**兩個月內從零考取 ITS Python 國際證照**，現正系統化建構雲端與全端技能。具備 AWS EC2 實戰部署經驗、IoT 系統整合能力與紮實的演算法基礎，期待加入重視成長與協作的技術團隊。
+> 
+> ![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws) ![Python](https://img.shields.io/badge/Python-ITS-blue?logo=python) ![Linux](https://img.shields.io/badge/Linux-Ubuntu-black?logo=linux) ![Docker](https://img.shields.io/badge/Docker-blue?logo=docker)
+> 
+> Successfully transitioned from linguistics and international trade into tech, demonstrating strong learning ability. **Earned ITS Python International Certification from scratch in 2 months.** Currently building cloud and full-stack skills through systematic training. Hands-on experience with AWS EC2 deployment, IoT system integration, and solid algorithmic foundation. Eager to join a growth-oriented tech team.
 
 ---
 
-## 🛠️ Technical Skills | 技術技能
+## 🏗️ 精選專案 | Featured Projects
 
-### Cloud & DevOps | 雲端與開發維運
-![AWS](https://img.shields.io/badge/AWS-EC2_實戰部署-orange?logo=amazonaws)
-![Linux](https://img.shields.io/badge/Linux-伺服器配置-black?logo=linux)
-![Docker](https://img.shields.io/badge/Docker-Learning-blue?logo=docker)
-![Git](https://img.shields.io/badge/Git-Expert-orange?logo=git)
-- **Cloud**: AWS EC2 實戰部署 (LAMP + MQTT) • 安全群組設定 • 固定 IP 配置
-- **DevOps**: Linux 系統管理 • Bash 自動化腳本 • Docker 容器化
-- **Version Control**: Git, GitHub/GitLab, Git Flow
+### ❶ AWS EC2 完整部署實戰：LAMP + MQTT 服務架設
+**使用技術：** AWS EC2 · Ubuntu · Apache · MySQL · PHP · Mosquitto MQTT · Linux · Bash
+**專案亮點：**
+- **完整雲端部署流程**：從帳號註冊、執行個體啟動、安全群組設定到服務安裝
+- **自動化部署腳本**：撰寫 Bash 腳本一鍵安裝 LAMP 環境與 MQTT Broker
+- **維運與安全實務**：設定固定 IP、配置防火牆、管理使用者權限
+- **詳細技術文檔**：362 行逐步教學，展示系統化思維與知識分享能力
+**🔗 [查看完整部署指南](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup)**
 
-### Backend | 後端
-![Python](https://img.shields.io/badge/Python-ITS認證-blue?logo=python)
-![Algorithms](https://img.shields.io/badge/Algorithms-32+_LeetCode-green)
-- **Python**: ITS 專業認證 (已取得) | 32+ LeetCode 題解 (Easy 25 / Medium 7)
-- **Web 服務**: Apache • MySQL • PHP • MQTT (Mosquitto)
-- **數據庫**: MySQL 設定與管理 • 使用者權限配置
+### ❷ 雲端架構概念驗證：事件驅動影像處理服務
+**使用技術：** AWS (S3, Lambda, EC2) · Docker · Python
+**專案亮點：**
+- **雲端架構設計**：規劃基於事件驅動的服務藍圖，設計 S3→Lambda→EC2 協作流程
+- **容器化實踐**：將 Python 模型容器化 (Docker)，驗證其作為獨立服務的可行性
+- **理解服務協作**：釐清 AWS 核心服務在無伺服器架構中的角色與數據流向
+**🔗 [查看專案文件](https://github.com/Beiyin-ai/coding-portfolio/tree/main/projects)**
 
-### Frontend | 前端
-![JavaScript](https://img.shields.io/badge/JavaScript-Intermediate-yellow?logo=javascript)
-![HTML5](https://img.shields.io/badge/HTML5-Intermediate-orange?logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-Intermediate-blue?logo=css3)
-- **Core**: HTML5, CSS3, JavaScript (ES6+)
-- **Framework**: 課程中學習 Vue.js/ReactJS 基礎
+### ❸ 台灣水庫即時監測與分析系統
+**使用技術：** Python · Selenium · BeautifulSoup4 · pandas · matplotlib
+**專案亮點：**
+- **自動化數據採集**：開發爬蟲抓取 21 座水庫即時數據
+- **高效數據處理**：40 秒內完成爬取、解析、視覺化全流程
+- **產出完整報表**：輸出 CSV 資料檔與視覺化長條圖，建立監測分析流程
+**🔗 [查看專案](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Python-Projects/Taiwan-Reservoir-Monitoring-System)**
 
----
+### ❹ 端到端 IoT 溫濕度監測系統
+**使用技術：** Linux (Ubuntu) · MQTT · Python · Docker · ESP32
+**專案亮點：**
+- **本地伺服器維運**：部署並配置 Mosquitto MQTT Broker，建立穩定的物聯網數據中樞
+- **硬軟體整合**：整合 ESP32 感測器與 Python 後台服務，實現完整數據鏈路
+- **後台服務開發**：開發 Python 服務訂閱 MQTT 主題、解析數據、執行異常判斷
+**🔗 [查看專案](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Python-Projects/IoT-MQTT-System)**
 
-## 📂 Featured Projects | 精選項目
+### ❺ 演算法解題與系統化思維
+**使用技術：** Python · 數據結構 · 演算法
+**專案亮點：**
+- **32+ LeetCode 題解**：包含 25 題 Easy、7 題 Medium，培養紮實的邏輯基礎
+- **完整分析記錄**：每題記錄思路、時間/空間複雜度、多重解法比較
+- **系統化分類**：清晰分類便於複習與檢視解題思維的成長軌跡
+**🔗 [查看解題記錄](https://github.com/Beiyin-ai/coding-portfolio/tree/main/algorithms)**
 
-### 🥇 [AWS Cloud Deployment Guide](Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup/)
-**☁️ AWS EC2 完整部署實戰 | 362行詳細教學 | 一鍵自動化腳本**
-- **Tech Stack**: AWS EC2 • Ubuntu 24.04 • Apache • MySQL • PHP • Mosquitto MQTT
-- **專案亮點**:
-  - 📚 **完整教學文件**: 362行詳細步驟，從註冊到部署完整流程
-  - ⚡ **自動化腳本**: 一鍵安裝 LAMP、MQTT、安全設定
-  - 🔧 **實用範例**: MQTT Pub/Sub 程式、設定檔模板、疑難排解
-  - 🛡️ **安全實務**: 安全群組設定、防火牆配置、權限管理
-- **展示能力**: 雲端服務部署 • 伺服器配置 • 自動化維運 • 技術文檔撰寫
+## 🛠️ 技術能力 | Technical Skills
 
-### 🥈 [Algorithmic Problem-Solving Repository](algorithms/)
-**🏆 32+ LeetCode Solutions (25 Easy, 7 Medium) | 系統化解題思維**
-- **Tech**: Python
-- **專案亮點**:
-  - 🧠 **每題完整分析**: 思路、時間/空間複雜度、多重解法比較
-  - 📊 **分類整理**: Easy (25題) / Medium (7題) 清晰分類
-  - 🔍 **測試案例**: 部分題目包含測試腳本
-- **展示能力**: 數據結構 • 演算法 • 系統化思考 • 問題解決能力
+**☁️ 雲端平台：**
+- AWS EC2 實戰部署 (LAMP, MQTT) · 安全群組設定 · VPC 基礎概念
+- 了解雲端服務模型 (IaaS/PaaS/SaaS) · 對 Azure/GCP 有學習意願
 
-### 🥉 [IoT & Python Projects](Python-Projects/)
-**🤖 物聯網系統實作 | 手勢控制 | 數據監控**
-- **專案包含**:
-  - `IoT-MQTT-System`: Docker 化 MQTT 系統
-  - `Hand-Gesture-ESP32-Light-Control`: ESP32 手勢控制
-  - `Taiwan-Reservoir-Monitoring-System`: 水庫數據監控
-- **展示能力**: 物聯網開發 • 硬體整合 • 數據處理 • Docker 容器化
+**🖥️ 系統與維運：**
+- Linux (Ubuntu) 系統操作 · 服務管理 · Bash 自動化腳本
+- 網路基礎 (TCP/IP, 防火牆, 固定IP) · Docker 容器化基礎
+- 版本控制 Git · GitHub/GitLab 協作流程
 
----
+**💻 程式開發：**
+- **Python**: ITS 國際認證 · Web 爬蟲 · 數據分析 (pandas, matplotlib) · 後台服務
+- **Web 技術**: HTML5 · CSS3 · JavaScript (ES6+) · 了解 Vue.js/React 基礎
+- **資料庫**: MySQL 安裝設定與權限管理 · 基礎 SQL 操作
+- **其他**: API 設計概念 · MQTT 物聯網通訊 · 基本演算法與數據結構
 
-## 🎯 Why me | 為何我適合
+## 📜 證照與語言 | Certifications & Languages
 
-我深入研究職缺描述，我的學習路徑與團隊需求高度重合：
+**專業證照：**
+- ITS Python 國際證照 (預計 2026年1月取得)
+- TOEIC 795 (聽/讀) · DELE B1 西班牙語能力證書
+- 國貿技術士丙級證照
 
-1.  **☁️ 雲端實戰經驗**: 具備 AWS EC2 完整部署經驗，能快速上手雲端環境與維運工作。
-2.  **🛡️ 安全意識與熱情**: 對「產品資安解決方案」充滿好奇與熱情，渴望在實戰中學習並貢獻。
-3.  **🧠 核心基礎紮實**: 32+ LeetCode 題解證明邏輯與演算法能力，這是學習任何技術的堅實基礎。
-4.  **🚀 成長型心態**: 強大的學習引擎與務實態度，能快速融入團隊的技術文化並分擔開發任務。
-5.  **🤝 協作與溝通**: 過往經驗證明我能有效進行團隊協作與跨領域溝通，確保專案順利推進。
-6.  **📚 文檔與分享**: 重視技術文檔撰寫與知識分享，建立完整的部署指南展示系統化思維。
+**語言能力：**
+- 中文 (母語) · 英文 (精通，TOEIC 795) · 西班牙文 (中等，DELE B1) · 印尼文 (略懂)
 
----
+## 🎯 核心優勢 | Core Strengths
 
-## 📬 Let's Connect | 聯繫我
+1.  **🚀 快速學習與執行力**：兩個月從零考取專業認證，並自主完成多個實戰專案。
+2.  **🧠 紮實的邏輯與問題解決能力**：透過 32+ LeetCode 題解鍛鍊演算法思維，建立系統化分析方法。
+3.  **☁️ 雲端實戰經驗**：具備 AWS EC2 完整部署經驗，從概念到上線的完整流程實踐。
+4.  **🤝 跨領域溝通協作**：多語言能力與過往團隊經驗，能有效進行技術與非技術溝通。
+5.  **📚 文檔化與知識分享**：重視技術文件撰寫，建立清晰的部署指南與專案說明。
 
-### 📧 聯絡資訊 | Contact Information
-- **Email:** [chiupeiyin08@gmail.com](mailto:chiupeiyin08@gmail.com)
-- **Phone:** [+886-983-689-716]
-- **Location:** New Taipei, Taiwan | 台灣新北
+## 📬 聯絡方式 | Contact Information
 
-### 🌐 線上履歷與作品集 | Online Resume & Portfolio
-- **GitHub:** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
-- **作品集專案:** [coding-portfolio](https://github.com/Beiyin-ai/coding-portfolio)
-- **雲端部署專案:** [AWS LAMP + MQTT Guide](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup)
-
-### 📄 證照與能力 | Certifications & Qualifications
-- **語言能力:** TOEIC 795 (English) | DELE B1 (Spanish)
-- **專業認證:** ITS Python International Certification (2025)
-- **雲端技能:** AWS EC2 實戰部署經驗
-- **其他證照:** 國貿技術士丙級證照
+- **📧 Email：** pei.yin.s.chiu@gmail.com
+- **📞 Phone：** 0983-689-716
+- **🐙 GitHub：** [github.com/Beiyin-ai](https://github.com/Beiyin-ai)
+- **📍 地點：** 台北市、新北市 · 可配合上班地點
+- **💼 求職狀態：** 積極尋找雲端工程師、全端工程師、後端工程師相關職位
 
 ---
 
-> *"從解一道題到部署一個雲端服務，我正走在成為可靠工程師的路上。"*
-> *"From solving one problem to deploying a cloud service, I am on the path to becoming a reliable engineer."*
+> *「從解一道題到部署一個雲端服務，我正走在成為可靠工程師的路上。」*
+> *"From solving one algorithm problem to deploying a cloud service, I am on the path to becoming a reliable engineer."*
