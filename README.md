@@ -20,13 +20,13 @@
 - **詳細技術文檔**：362 行逐步教學，展示系統化思維與知識分享能力
 **🔗 [查看完整部署指南](https://github.com/Beiyin-ai/coding-portfolio/tree/main/Cloud-Deployment-Guides/AWS-LAMP-MQTT-Setup)**
 
-### ❷ 雲端架構概念驗證：事件驅動影像處理服務
-**使用技術：** AWS (S3, Lambda, EC2) · Docker · Python
+### ❷ ESP32 智能桌面顯示器
+**使用技術：** ESP32 · MicroPython · IoT · 硬體整合
 **專案亮點：**
-- **雲端架構設計**：規劃基於事件驅動的服務藍圖，設計 S3→Lambda→EC2 協作流程
-- **容器化實踐**：將 Python 模型容器化 (Docker)，驗證其作為獨立服務的可行性
-- **理解服務協作**：釐清 AWS 核心服務在無伺服器架構中的角色與數據流向
-**🔗 [查看專案文件](https://github.com/Beiyin-ai/coding-portfolio/tree/main/projects)**
+- **完整 IoT 裝置開發**：從硬體選型、韌體開發到系統整合
+- **MicroPython 實踐**：使用 MicroPython 進行嵌入式開發，展示跨平台能力
+- **實際應用場景**：設計實用的桌面資訊顯示裝置，結合美觀與功能性
+**🔗 [查看專案](https://github.com/Beiyin-ai/coding-portfolio/tree/main/projects/ESP32-Smart-Desktop-Display)**
 
 ### ❸ 台灣水庫即時監測與分析系統
 **使用技術：** Python · Selenium · BeautifulSoup4 · pandas · matplotlib
