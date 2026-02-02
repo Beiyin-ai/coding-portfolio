@@ -39,6 +39,21 @@ pip install -r requirements.txt
 export MODEL_DIR="./models"
 ```
 
+### Model Files Download
+
+Due to the large size of model files, please download them from the following link and place them in the `models/` directory:
+- [Model Files Download Link](your-download-link)
+
+Or prepare model files using the following commands:
+
+```bash
+# Create models directory
+mkdir -p models
+
+# Copy your .pth model files to this directory
+# cp /path/to/your/models/*.pth models/
+```
+
 ### Start Service
 
 ```bash
@@ -138,15 +153,12 @@ MNIST-MultiModel-FastAPI-API/
 ├── requirements.txt    # Dependencies
 ├── README.md          # Chinese documentation
 ├── README.en.md       # English documentation
-├── models/            # Model weight files
-│   ├── simple_nn_mnist.pth
-│   ├── simple_cnn_mnist.pth
-│   └── ...
 ├── docs/              # Documentation
 │   ├── ARCHITECTURE.md
 │   └── API_DOCS.md
-└── tests/             # Test files
-    └── test_api.py
+└── models/            # Model weight files
+    ├── README.md
+    └── *.pth
 ```
 
 ## 🤝 Contributing

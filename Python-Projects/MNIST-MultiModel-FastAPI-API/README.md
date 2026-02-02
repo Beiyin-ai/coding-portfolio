@@ -39,6 +39,21 @@ pip install -r requirements.txt
 export MODEL_DIR="./models"
 ```
 
+### 模型檔案下載
+
+由於模型檔案較大，請從以下連結下載並放置於 `models/` 目錄：
+- [模型檔案下載連結](你的下載連結)
+
+或使用以下指令準備模型檔案：
+
+```bash
+# 建立 models 目錄
+mkdir -p models
+
+# 將你的 .pth 模型檔案複製到此目錄
+# cp /path/to/your/models/*.pth models/
+```
+
 ### 啟動服務
 
 ```bash
@@ -138,15 +153,12 @@ MNIST-MultiModel-FastAPI-API/
 ├── requirements.txt    # 依賴套件
 ├── README.md          # 中文說明
 ├── README.en.md       # 英文說明
-├── models/            # 模型權重檔案
-│   ├── simple_nn_mnist.pth
-│   ├── simple_cnn_mnist.pth
-│   └── ...
 ├── docs/              # 說明文件
 │   ├── ARCHITECTURE.md
 │   └── API_DOCS.md
-└── tests/             # 測試檔案
-    └── test_api.py
+└── models/            # 模型權重檔案
+    ├── README.md
+    └── *.pth
 ```
 
 ## 🤝 貢獻
