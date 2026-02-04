@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Output files
+output/
+*.mp4
+*.avi
+*.jpg
+*.png
+
+# Data files
+*.pkl
+*.h5
+*.hdf5
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+pyvenv.cfg
+
+# Docker
+*.dockerignore
+
+# Models (可以選擇性忽略，但建議保留空檔案)
+# models/
+!models/.gitkeep
+
+# Images for face recognition
+# img/
+!img/.gitkeep
