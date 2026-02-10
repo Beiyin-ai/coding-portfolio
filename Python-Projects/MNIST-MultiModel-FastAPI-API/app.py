@@ -1,4 +1,8 @@
+import sys
 import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), 'training_scripts'))
+
 import io
 import torch
 import torch.nn as nn
@@ -126,7 +130,8 @@ app.add_middleware(
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 models = {}
 vit_processor = None
-MODeL_DIR = os.environ.get("MODEL_DIR", "/app/models")
+# MODeL_DIR = os.environ.get("MODEL_DIR", "/app/models")
+MODeL_DIR = os.environ.get("MODEL_DIR", "./models")
 
 # 資料預處理
 def preprocess_for_mnist(pil_img):
@@ -305,7 +310,7 @@ async def predict(file: UploadFile = File(...)):
             results[name] = PredictionResult(
                 model_name=name,
                 prediction=pred,
-                confedence=conf,
+                confidence=conf,
                 probabilities=probs.tolist()
             )
 
