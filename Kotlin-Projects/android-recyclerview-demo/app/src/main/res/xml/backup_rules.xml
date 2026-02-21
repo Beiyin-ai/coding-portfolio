@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Sample backup rules file; customize for your app
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!--
+    Don't include these files in auto backup
+    <exclude domain="sharedpreferences" path="device.xml"/>
+    -->
+</full-backup-content>
