@@ -1,0 +1,9 @@
+# ESP32 端（在 ESP32 上透過 mip 安裝）
+umqtt.robust
+
+# Linux 主機端（如需執行測試程式）
+paho-mqtt==1.6.1
+pyserial==3.5
+
+# 可選：如使用 Docker 執行 MQTT Broker
+# docker run -d --name mqtt -p 1883:1883 -p 9001:9001 eclipse-mosquitto:2.0
