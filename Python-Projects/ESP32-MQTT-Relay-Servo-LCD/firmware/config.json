@@ -1,0 +1,15 @@
+cat > firmware/config.json << 'EOF'
+{
+    "comment": "===== MQTT 設定檔 - 請修改以下設定 =====",
+    
+    "mqtt_broker": "你的MQTT Broker IP",
+    "mqtt_port": 443,
+    "topic_head": "your/topic/prefix",
+    
+    "topic_servo": "/servo",
+    "topic_lcd": "/LCD", 
+    "topic_relay": "/relay",
+    
+    "note": "修改後可用 python test_get_conf.py 測試設定檔是否正確"
+}
+EOF
