@@ -1,4 +1,3 @@
-cat > firmware/config.json << 'EOF'
 {
     "comment": "===== MQTT 設定檔 - 請修改以下設定 =====",
     
@@ -12,4 +11,3 @@ cat > firmware/config.json << 'EOF'
     
     "note": "修改後可用 python test_get_conf.py 測試設定檔是否正確"
 }
-EOF
