@@ -10,14 +10,14 @@
 
 // ==================== 設定區 ====================
 // WiFi
-const char* ssid     = "kbro-51-28";
-const char* password = "0937696881";
-const char* serverUrl = "http://192.168.0.46:5000/api/sensor-data";
+const char* ssid     = "*****";
+const char* password = "*****";
+const char* serverUrl = "http://********:5000/api/sensor-data";
 
 // LED 燈條
 #define LED_PIN       5
 #define NUM_LEDS      8
-#define LED_BRIGHTNESS 50
+#define LED_BRIGHTNESS 20
 #define LED_UPDATE_MS 100      // LED 動畫更新間隔 (ms)
 
 // INA219
@@ -45,8 +45,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 // 感測器資料更新間隔 (ms)
 #define SENSOR_INTERVAL_MS 10000
 
-// OLED 更新間隔 (ms) - 10 分鐘
-#define OLED_UPDATE_MS     600000
+// OLED 更新間隔 (ms) - 2 分鐘
+#define OLED_UPDATE_MS     120000
 
 // WiFi 檢查間隔 (ms)
 #define WIFI_CHECK_MS      20000
@@ -79,8 +79,6 @@ SensorData sensorData;
 
 // LED 動畫
 Adafruit_NeoPixel pixels(NUM_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
-enum LedMode { RAINBOW, RED, GREEN, BLUE, OFF };
-LedMode currentLedMode = OFF;
 unsigned long lastLedUpdate = 0;
 
 // 時間管理
@@ -97,9 +95,7 @@ void readSensors();
 void uploadData();
 void updateOLED();
 void updateLEDs();
-void setLedModeByPowerAndSolar();
 uint32_t Wheel(byte WheelPos);
-void showRainbowStatic();
 // ================================================
 
 void setup() {
@@ -170,6 +166,7 @@ void initHardware() {
     display.clearDisplay();
     display.setTextSize(1);
     display.setTextColor(SSD1306_WHITE);
+    display.cp437(true);
     display.setCursor(0, 0);
     display.println("系統啟動中...");
     display.display();
@@ -347,82 +344,67 @@ void uploadData() {
 // ==================== OLED 顯示 ====================
 void updateOLED() {
   if (!oled_ok) return;
-
+  
   display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-
-  // 第 1 行 (y=0) - 溫度與濕度
+  
   display.setCursor(0, 0);
-  display.printf("Tmp:%.1fC Hum:%.0f%%", sensorData.temperature, sensorData.humidity);
-
-  // 第 2 行 (y=8) - 電流
-  display.setCursor(0, 8);
-  display.printf("Cur:%.0fmA", sensorData.current_mA);
-
-  // 第 3 行 (y=16) - 電壓
+  display.print("Temp:"); display.print(sensorData.temperature, 1); display.print("C ");
+  display.print("Hum:"); display.print(sensorData.humidity, 0); display.print("%");
+  
   display.setCursor(0, 16);
-  display.printf("Volt:%.2fV", sensorData.loadvoltage);
-
-  // 第 4 行 (y=24) - 太陽能電壓 + 時間
-  display.setCursor(0, 24);
-  unsigned long ts = sensorData.timestamp;
-  int hrs = ts / 3600;
-  int mins = (ts % 3600) / 60;
-  display.printf("Sol:%.1fV %dh%dm", sensorData.solarVoltage, hrs, mins);
-
+  display.print("Current:"); display.print(sensorData.current_mA, 0); display.print("mA");
+  
+  display.setCursor(0, 32);
+  display.print("Voltage:"); display.print(sensorData.loadvoltage, 2); display.print("V");
+  
+  display.setCursor(0, 48);
+  display.print("Solar:"); display.print(sensorData.solarVoltage, 1); display.print("V ");
+  
+  int hrs = sensorData.timestamp / 3600;
+  int mins = (sensorData.timestamp % 3600) / 60;
+  display.print(hrs); display.print("h"); display.print(mins); display.print("m");
+  
   display.display();
 }
 
 // ==================== LED 控制 ====================
-void setLedModeByPowerAndSolar() {
-  // 根據最新感測值決定 LED 模式
-  if (sensorData.solarVoltage > 3.0) {
-    currentLedMode = RAINBOW;
-  } else {
-    float p = sensorData.power_mW;
-    if (p < POWER_LOW_MAX) {
-      currentLedMode = GREEN;
-    } else if (p < POWER_MEDIUM_MAX) {
-      currentLedMode = BLUE;
-    } else {
-      currentLedMode = RED;
-    }
-  }
-}
-
-// 顯示靜態彩虹（所有 LED 同時亮，形成漸層）
-void showRainbowStatic() {
-  for (int i = 0; i < NUM_LEDS; i++) {
-    uint32_t color = Wheel((i * 256 / NUM_LEDS) % 256);
-    pixels.setPixelColor(i, color);
-  }
-  pixels.show();
-}
-
 void updateLEDs() {
-  setLedModeByPowerAndSolar();
-
-  if (currentLedMode == RAINBOW) {
-    showRainbowStatic();  // 現在每顆顏色都不同
-    return;
+  // 固定亮度（不呼吸）
+  pixels.setBrightness(LED_BRIGHTNESS);
+  
+  uint32_t green = pixels.Color(0, 255, 0);
+  uint32_t blue  = pixels.Color(0, 0, 255);
+  uint32_t red   = pixels.Color(255, 0, 0);
+  
+  float p = sensorData.power_mW;
+  
+  // ---------- 1. 太陽能模式：8顆全亮彩虹 ----------
+  if (sensorData.solarVoltage > 3.0) {
+    for (int i = 0; i < NUM_LEDS; i++) {
+      // 每顆LED分配不同彩虹色（均勻分布）
+      uint32_t rainbow = Wheel((i * 256 / NUM_LEDS) % 256);
+      pixels.setPixelColor(i, rainbow);
+    }
+    pixels.show();
+    return;  // 直接結束，不執行功率模式
   }
-
-  // 功率模式：全亮單色
-  uint32_t color = 0;
-  switch (currentLedMode) {
-    case RED:   color = pixels.Color(255, 0, 0); break;
-    case GREEN: color = pixels.Color(0, 255, 0); break;
-    case BLUE:  color = pixels.Color(0, 0, 255); break;
-    default:    color = 0; break;
+  
+  // ---------- 2. 功率模式：8顆全亮單色 ----------
+  uint32_t currentColor;
+  if (p < POWER_LOW_MAX) {
+    currentColor = green;  // 低功率：綠色
+  } else if (p < POWER_MEDIUM_MAX) {
+    currentColor = blue;   // 中功率：藍色
+  } else {
+    currentColor = red;    // 高功率：紅色
   }
-
+  
+  // 全部設為同一顏色（瞬間切換）
   for (int i = 0; i < NUM_LEDS; i++) {
-    pixels.setPixelColor(i, color);
+    pixels.setPixelColor(i, currentColor);
   }
   pixels.show();
 }
-
 // 輸入 0-255 取得彩虹色
 uint32_t Wheel(byte WheelPos) {
   if (WheelPos < 85) {
