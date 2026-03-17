@@ -10,9 +10,9 @@
 
 // ==================== 設定區 ====================
 // WiFi
-const char* ssid     = "kbro-51-28";
-const char* password = "0937696881";
-const char* serverUrl = "http://192.168.0.46:5000/api/sensor-data";
+const char* ssid     = "AIMESH92";
+const char* password = "92abcd1234";
+const char* serverUrl = "http://192.168.50.143:5000/api/sensor-data";
 
 // LED 燈條
 #define LED_PIN       5
@@ -80,7 +80,6 @@ SensorData sensorData;
 SensorData lastDisplayedData;
 
 // LED 動畫
-// LED 動畫
 Adafruit_NeoPixel pixels(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 unsigned long lastLedUpdate = 0;
 
@@ -129,7 +128,7 @@ void loop() {
     checkWiFi();
   }
 
-  // 4. 定期更新 LED (100ms) - 現在是全亮，但仍定時更新以切換模式
+  // 4. 定期更新 LED (10秒) - 固定粉色，8顆全亮
   if (now - lastLedUpdate >= LED_UPDATE_MS) {
     lastLedUpdate = now;
     updateLEDs();
@@ -401,40 +400,20 @@ void updateOLED() {
 }
 
 // ==================== LED 控制 ====================
-// 修改重點：
-// 1. 固定亮度 (使用 LED_BRIGHTNESS = 20)
-// 2. 8顆全亮，永遠同一種粉色
-// 3. 完全消除顏色變化帶來的耗電差異
+// 實驗設計：固定所有變因，只讓環境因素影響耗電
+// - 亮度固定：20
+// - 顏色固定：粉紅色 (255,105,180)
+// - 數量固定：8顆全亮
 
 void updateLEDs() {
-
-  // 只初始化一次 LED 顏色
-  if (!ledInitialized) {
-
-    pixels.setBrightness(LED_BRIGHTNESS);
-
-    // 固定粉紅色 (Hot Pink)
-    uint32_t pinkColor = pixels.Color(255, 105, 180);
-
-    for (int i = 0; i < NUM_LEDS; i++) {
-      pixels.setPixelColor(i, pinkColor);
-    }
-
-    pixels.show();
-
-    ledInitialized = true;
+  pixels.setBrightness(LED_BRIGHTNESS);
+  
+  // 粉紅色 (Hot Pink) - RGB值經過挑選，耗電穩定
+  uint32_t pinkColor = pixels.Color(255, 105, 180);
+  
+  for (int i = 0; i < NUM_LEDS; i++) {
+    pixels.setPixelColor(i, pinkColor);
   }
-}
-
-
-uint32_t Wheel(byte WheelPos) {
-  if (WheelPos < 85) {
-    return pixels.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
-  } else if (WheelPos < 170) {
-    WheelPos -= 85;
-    return pixels.Color(255 - WheelPos * 3, 0, WheelPos * 3);
-  } else {
-    WheelPos -= 170;
-    return pixels.Color(0, WheelPos * 3, 255 - WheelPos * 3);
-  }
+  
+  pixels.show();
 }
