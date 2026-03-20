@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# 模型檔案
+model/
+*.bin
+*.pth
+*.onnx
+*.safetensors
+
+# 向量索引
+*.faiss
+*.index
+
+# IDE
+.vscode/
+.idea/
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# 環境變數
+.env
+.env.local
+
+# 快取檔案
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
