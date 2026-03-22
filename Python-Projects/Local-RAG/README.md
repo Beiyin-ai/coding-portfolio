@@ -1,39 +1,13 @@
 # Local RAG System
 
-一個完全在本機運作的檢索增強生成（RAG）系統，不需要將資料上傳到雲端。
+一個完全在本機運作的檢索增強生成（RAG）系統基礎環境。
 
 ## ✨ 功能特色
 
 - 🔒 **100% 本地運作**：所有資料和模型都在本地，確保資料安全
 - 🌏 **多語言支援**：支援中英文混合查詢
-- 🚀 **快速檢索**：使用 FAISS 向量資料庫進行相似度搜尋
-- 💬 **LLM 整合**：可連接本地 LLM 服務（localhost:8880）生成答案
-
-## 📦 安裝需求
-
-- Python 3.8+
-- sentence-transformers
-- faiss-cpu
-- openai
-- numpy
-
-## 🚀 快速開始
-
-1. 安裝依賴套件：
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. 設定模型快取目錄：
-   ```bash
-   export SENTENCE_TRANSFORMERS_HOME="$HOME/model/"
-   ```
-
-3. 執行程式：
-   ```bash
-   python basic_rag.py    # 基礎檢索版本
-   python complete_rag.py # 完整 RAG 版本
-   ```
+- 📦 **環境檢查**：自動檢查必要的環境變數
+- 🚀 **快速啟動**：一行指令完成環境設定
 
 ## 📁 專案結構
 
@@ -42,14 +16,56 @@ Local-RAG/
 ├── README.md          # 專案說明
 ├── requirements.txt   # 依賴套件
 ├── .gitignore        # Git 忽略規則
-├── basic_rag.py      # 基礎檢索功能
-└── complete_rag.py   # 完整 RAG 功能
+├── get_env_var.py    # 環境變數檢查工具
+└── a4_rag_環境.txt   # 環境建置步驟
 ```
 
-## 🔧 設定說明
+## 🚀 安裝方式
 
-本專案需要連接到本地 LLM 服務（預設位址：http://localhost:8880/v1）
-請確保在執行程式前已啟動 LLM 服務。
+```bash
+# 安裝依賴套件
+pip install -r requirements.txt
+
+# 設定模型快取目錄
+export SENTENCE_TRANSFORMERS_HOME="$HOME/model/"
+
+# 檢查環境變數是否設定成功
+python get_env_var.py
+```
+
+## 📦 安裝套件
+
+```bash
+# 使用 uv 安裝（推薦）
+uv add sentence-transformers chromadb faiss-cpu openai
+
+# 或使用 pip 安裝
+pip install sentence-transformers chromadb faiss-cpu openai
+```
+
+## 🔧 環境設定
+
+### 設定模型快取路徑
+
+將以下內容加入 `~/.bashrc` 或 `~/.zshrc`：
+
+```bash
+export SENTENCE_TRANSFORMERS_HOME="$HOME/model/"
+```
+
+### 檢查環境變數
+
+```bash
+python get_env_var.py
+# 輸出：SENTENCE_TRANSFORMERS_HOME=/home/user/model/
+```
+
+## 📝 快速開始
+
+1. 安裝依賴套件
+2. 設定環境變數
+3. 確認 LLM 服務已啟動（預設位址：http://localhost:8880/v1）
+4. 執行其他 RAG 專案（FAISS-RAG、ChromaDB-RAG）
 
 ## 📝 授權條款
 
