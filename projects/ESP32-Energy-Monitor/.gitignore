@@ -1,0 +1,62 @@
+# ==================== 敏感設定檔（包含密碼）====================
+# ESP32 韌體設定檔（真實密碼在這裡）
+firmware/config.cpp
+**/config.cpp
+!firmware/config.h.example
+
+# 環境變數檔案
+.env
+.env.*
+*.env
+
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# ==================== IDE ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==================== 資料庫 ====================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================== AI 模型檔案 ====================
+models/
+*.h5
+*.pkl
+*.joblib
+sensor_data_export.csv
+power_trend.png
+
+# ==================== 日誌檔案 ====================
+*.log
+logs/
+
+# ==================== 暫存檔案 ====================
+*.tmp
+*.bak
+*.backup
+*.old
+
+# ==================== 平台io ====================
+.pio/
+build/
+libdeps/
