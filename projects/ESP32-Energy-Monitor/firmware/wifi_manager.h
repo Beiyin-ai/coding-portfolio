@@ -4,6 +4,8 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
+extern String serverUrl;  // 宣告全域變數
+
 void connectWiFi();
 void checkWiFi();
 

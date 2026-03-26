@@ -6,6 +6,8 @@
 #include "led_controller.h"
 #include "data_upload.h"
 
+String serverUrl = "";
+
 unsigned long lastSensorRead = 0;
 unsigned long lastOledUpdate = 0;
 unsigned long lastWifiCheck = 0;

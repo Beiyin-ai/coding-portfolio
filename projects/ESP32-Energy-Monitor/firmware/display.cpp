@@ -1,50 +1,59 @@
-#include "display.h"
-#include "hardware.h"
+#include "data_upload.h"
+#include "config.h"
 #include "sensors.h"
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <ArduinoJson.h>
 
-void updateOLED() {
-  if (!oled_ok) return;
+extern String serverUrl;  // 🔥 加上這行，從 wifi_manager.cpp 來的
 
-  if (sensorData.temperature == lastDisplayedData.temperature &&
-      sensorData.humidity == lastDisplayedData.humidity &&
-      sensorData.current_mA == lastDisplayedData.current_mA &&
-      sensorData.loadvoltage == lastDisplayedData.loadvoltage &&
-      sensorData.solarVoltage == lastDisplayedData.solarVoltage) {
+void uploadData() {
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("⚠️ WiFi 未連線，跳過上傳");
     return;
   }
 
-  display.clearDisplay();
+  if (serverUrl.length() == 0) {  // 🔥 加上這行，檢查是否設定好
+    Serial.println("⚠️ 尚未設定伺服器位址");
+    return;
+  }
 
-  display.setCursor(0, 0);
-  display.print("Temp:");
-  display.print(sensorData.temperature, 1);
-  display.print("C ");
-  display.print("Hum:");
-  display.print(sensorData.humidity, 0);
-  display.print("%");
+  HTTPClient http;
+  http.begin(serverUrl);
+  http.addHeader("Content-Type", "application/json");
 
-  display.setCursor(0, 16);
-  display.print("Current:");
-  display.print(sensorData.current_mA, 0);
-  display.print("mA");
+  StaticJsonDocument<512> doc;
+  doc["device_id"] = "ESP32_01";
+  doc["timestamp_esp"] = sensorData.timestamp;
+  doc["solar_voltage"] = sensorData.solarVoltage;
 
-  display.setCursor(0, 32);
-  display.print("Voltage:");
-  display.print(sensorData.loadvoltage, 2);
-  display.print("V");
+  JsonObject power = doc.createNestedObject("power");
+  power["bus_voltage"] = sensorData.busvoltage;
+  power["shunt_voltage"] = sensorData.shuntvoltage;
+  power["load_voltage"] = sensorData.loadvoltage;
+  power["current_ma"] = sensorData.current_mA;
+  power["power_mw"] = sensorData.power_mW;
 
-  display.setCursor(0, 48);
-  display.print("Solar:");
-  display.print(sensorData.solarVoltage, 1);
-  display.print("V ");
+  JsonObject env = doc.createNestedObject("environment");
+  env["temperature_c"] = sensorData.temperature;
+  env["humidity_percent"] = sensorData.humidity;
+  env["illuminance_raw"] = sensorData.ldrValue;
 
-  int hrs = sensorData.timestamp / 3600;
-  int mins = (sensorData.timestamp % 3600) / 60;
-  display.print(hrs);
-  display.print("h");
-  display.print(mins);
-  display.print("m");
+  String jsonString;
+  serializeJson(doc, jsonString);
 
-  display.display();
-  lastDisplayedData = sensorData;
+  Serial.println("📤 上傳資料...");
+  int httpCode = http.POST(jsonString);
+  
+  if (httpCode > 0) {
+    Serial.printf("✅ 伺服器回應 %d\n", httpCode);
+    if (httpCode == 200) {
+      String response = http.getString();
+      Serial.println(response);
+    }
+  } else {
+    Serial.printf("❌ 傳送失敗，錯誤碼: %d\n", httpCode);
+  }
+  
+  http.end();
 }

@@ -2,9 +2,20 @@
 #define CONFIG_H
 
 // ==================== WiFi 設定 ====================
-extern const char* ssid;        // 加上 extern
-extern const char* password;    // 加上 extern
-extern const char* serverUrl;   // 加上 extern
+// extern const char* ssid;        // 加上 extern
+// extern const char* password;    // 加上 extern
+// extern const char* serverUrl;   // 加上 extern
+
+// WiFi 設定結構
+struct WiFiNetwork {
+  const char* ssid;
+  const char* password;
+  const char* serverIp;
+};
+
+// 宣告外部變數（實際值寫在 config.cpp）
+extern const WiFiNetwork knownNetworks[];
+extern const int numNetworks;
 
 // ==================== LED 燈條設定 ====================
 #define LED_PIN       5
