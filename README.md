@@ -12,7 +12,7 @@
 ## 🏗️ 精選專案 | Featured Projects
 
 ### ❶ ESP32 智慧能源監控系統（ESG × 節能監控）
-**使用技術：** ESP32 · Arduino · Python Flask · MySQL · INA219 · DHT22 · OLED · LED 燈號反饋
+**使用技術：** ESP32 · Arduino · Python Flask · MySQL · INA219 · DHT22 · OLED · LED
 
 **專案亮點：**
 - **完整能耗監測鏈路**：整合電量（INA219）、溫濕度（DHT22）、光照（LDR）、太陽能電壓等感測器，實現即時數據採集與上傳
