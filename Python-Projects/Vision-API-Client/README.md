@@ -65,3 +65,58 @@ python img2txt_p1.py
 ## 📝 授權條款
 
 MIT License
+# Vision API Client
+
+本地 Vision API 的客戶端工具，支援圖片分析和問題詢問。
+
+## ✨ 功能特色
+
+- 🖼️ **圖片分析**：支援本機圖片分析
+- 🌐 **API 整合**：連接到本地 Vision API (localhost:8880)
+- 📝 **雙版本**：Python 和 Shell script 兩種版本
+- 🔍 **即時預覽**：顯示 base64 編碼前綴
+
+## 📦 安裝需求
+
+- Python 3.8+
+- curl
+- jq (for shell script)
+
+## 🚀 快速開始
+
+1. 安裝依賴套件：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. 執行程式：
+   ```bash
+   # Python 版本
+   python vision_api.py
+   
+   # Shell 版本
+   chmod +x vision_api.sh
+   ./vision_api.sh p2.png
+   ```
+
+## 📁 專案結構
+
+```
+Vision-API-Client/
+├── README.md          # 專案說明
+├── requirements.txt   # 依賴套件
+├── .gitignore        # Git 忽略規則
+├── vision_api.py     # Python 版本
+├── vision_api.sh     # Shell 版本
+└── examples/
+    └── test_images/  # 測試圖片
+```
+
+## 🔧 設定說明
+
+本專案需要連接到本地 Vision API 服務（預設位址：http://localhost:8880/v1）
+請確保在執行程式前已啟動 LLM/Vision 服務。
+
+## 📝 授權條款
+
+MIT License
