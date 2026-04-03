@@ -99,7 +99,7 @@ fall-detection-mcp-agent/
 └── git_notes/                   # Git 操作記錄
 \`\`\`
 
-## 🔧 技術棧
+## 🔧 使用技術
 
 - **MCP 協議**：stdio / SSE / Streamable HTTP
 - **AI 模型**：Qwen3-VL-2B-Instruct (GGUF)
