@@ -28,8 +28,8 @@ extern const int numNetworks;
 #define DHTTYPE       DHT22
 
 // ==================== 類比腳位設定 ====================
-#define LDR_PIN       34
-#define SOLAR_PIN     35
+#define LDR_PIN       32
+#define SOLAR_PIN     34
 #define SOLAR_R1      10000.0
 #define SOLAR_R2      10000.0
 
