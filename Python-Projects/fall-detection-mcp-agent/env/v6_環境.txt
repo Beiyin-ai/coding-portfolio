@@ -1,0 +1,66 @@
+cd ; uv init v6 ; cd v6
+
+~/v6 👉 ll -d .venv/
+
+~/v6 👉 vv
+不是uv工作目錄
+
+~/v6 👉 cp -r ~/Downloads/ai/a6/  .
+
+~/v6 👉 uv add fastapi
+
+~/v6 👉 uv add openai
+
+~/v6 👉 uv add paho-mqtt
+
+~/v6 👉 uv add aiohttp
+
+~/v6 👉 ll -d .venv/
+
+👉 find ~/.cache/uv/ -name 'fastmcp*' | grep '3.1.0'
+
+👉 find ~/.cache/uv/ -name 'fastmcp-3*'
+
+~/v6 👉 uv add fastmcp==3.1.0 --offline
+
+~/v6 👉 ll -d .venv/
+
+👉 find ~/.cache/uv/ -name 'opencv-python*'
+
+👉 find ~/.cache/uv/ -name 'opencv*'
+
+### 注意： pypi/opencv-python/opencv_python-4.12.0.88
+
+~/v6 👉 uv add opencv-python==4.12.0.88 --offline
+
+~/v6 👉 cat pyproject.toml
+
+~/v6 👉 vv
+(v6) ~/v6 👉 ll -d .venv/
+
+
+
+👉 ~/Downloads/ai/a6/mqtt1883測試or建立.sh
+
+
+👉 gnome-terminal -t 'agent/task' --geometry=35x9 -- mosquitto_sub -h 172.17.0.1 -p 1883 -t 'agent/task'
+
+
+### 執行  agent_task.py 時，參考  agent.task/agent_task.測試.md
+
+### 底下是 執行  agent.cam/agent_cam.g5.py ， window-size 有時會因受開啟的視窗大小影響而失敗
+
+👉 firefox  --window-size 640,320  --new-window 'http://localhost:8817/' &
+
+👉 firefox  --window-size 640,320  --new-window 'http://localhost:8818/mymcp_cam.mjpg' &
+
+👉 firefox  --window-size 640,320  --new-window 'http://localhost:8828/' &
+
+👉 google-chrome  --window-size=480,320  --app='http://localhost:8817' &
+
+👉 google-chrome  --window-size=480,320  --app='http://localhost:8818/mymcp_cam.mjpg' &
+
+👉 google-chrome  --window-size=480,320  --app='http://localhost:8828' &
+
+
+https://gemini.google.com/share/23410b250d9a
