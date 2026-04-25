@@ -1,7 +1,7 @@
-# 👋 邱佩吟 | Chiu Pei-Yin
+# 邱佩吟 | CHIU PEI-YIN
 ### 雲端 × IoT × 全端 | 快速學習 × 實戰導向
 
-> 從外語與國際貿易背景成功轉型，證明我擁有強大的學習引擎。**兩個月內從零考取 ITS Python 國際證照**，現正系統化建構雲端、IoT 與全端技能。具備 AWS EC2 實戰部署經驗、完整 IoT 系統整合能力，近期聚焦於 **ESG 節能監控** 與 **資料中心能耗可視化** 領域，期待加入重視成長與協作的技術團隊。
+> 從外語與國際貿易背景轉型。**兩個月內從零考取 ITS Python 國際證照**，系統化建構雲端、IoT 與全端技能。具備 AWS EC2 實戰部署經驗、完整 IoT 系統整合能力，近期聚焦於 **ESG 節能監控** 與 **資料中心能耗可視化** 領域，期待加入重視成長與協作的技術團隊。
 > 
 > ![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws) ![Python](https://img.shields.io/badge/Python-ITS-blue?logo=python) ![Linux](https://img.shields.io/badge/Linux-Ubuntu-black?logo=linux) ![IoT](https://img.shields.io/badge/IoT-ESP32-green?logo=espressif) ![Node-RED](https://img.shields.io/badge/Node--RED-正在學習-red?logo=nodered)
 > 
