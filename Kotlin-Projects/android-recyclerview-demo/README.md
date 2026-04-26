@@ -28,9 +28,6 @@ app/src/main/res/layout/
 └── item_list.xml            # 列表項目佈局
 ```
 
-## 截圖
-(待補)
-
 ## 如何執行
 1. Clone 專案
 2. 用 Android Studio 開啟
