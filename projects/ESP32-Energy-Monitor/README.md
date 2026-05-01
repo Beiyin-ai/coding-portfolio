@@ -139,7 +139,3 @@ MIT License
 ## 📧 聯絡方式
 
 專案連結: [https://github.com/您的帳號/ESP32-Energy-Monitor](https://github.com/您的帳號/ESP32-Energy-Monitor)
-
----
-
-⭐ 如果這個專對您有幫助，歡迎給個星星！
